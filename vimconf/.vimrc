@@ -7,6 +7,7 @@ set shiftwidth=4
 set expandtab
 
 set relativenumber
+let g:ycm_global_ycm_extra_conf = "/home/hayden/git/.ycm_extra_conf.py"
 
 
 if has('nvim')
