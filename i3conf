@@ -3,6 +3,8 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
+exec --no-startup-id nitrogen --restore
+exec --no-startup-id /home/hayden/scripts/login
 
 ### Variables
 #Test of hard linking to git repo
@@ -19,14 +21,15 @@ set $term urxvt
 # Your preferred application launcher
 set $menu dmenu_run
 default_border none
+exec --no-startup-id nm-applet
 
-gaps outer 0
-gaps inner 8
+gaps outer 4
+gaps inner 8 
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/005.png fill
+#output * bg /usr/share/backgrounds/005.png fill
 #
 # Example configuration:
 #
@@ -67,7 +70,8 @@ output * bg /usr/share/backgrounds/005.png fill
     # Despite the name, also works for non-floating windows.
     # Change normal to inverse to use left mouse button for resizing and right
     # mouse button for dragging.
-    floating_modifier $mod normal
+    #
+    #floating_modifier $mod normal
 
     # reload the configuration file
     bindsym $mod+Shift+c reload
@@ -203,4 +207,4 @@ bar {
     }
 }
 
-include /etc/sway/config.d/*
+#include /etc/sway/config.d/*

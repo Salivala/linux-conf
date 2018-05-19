@@ -12,15 +12,13 @@ let g:ycm_global_ycm_extra_conf = "/home/hayden/git/.ycm_extra_conf.py"
 
 if has('nvim')
     call plug#begin('~/.local/share/nvim/plugged')
-
-
 else
-
     call plug#begin('~/.vim/plugged')
     Plug 'valloric/youcompleteme'
     Plug 'scrooloose/syntastic'
 
 
+let g:ycm_confirm_extra_conf = 0
 
 endif
 
