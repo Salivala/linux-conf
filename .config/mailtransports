@@ -1,0 +1,22 @@
+[General]
+default-transport=381596228
+
+[Transport 381596228]
+auth=true
+encryption=SSL
+host=smtp.gmail.com
+id=381596228
+name=Google Mail (hsszyman)
+port=465
+storepass=true
+user=hsszyman@gmail.com
+
+[Transport 839049611]
+auth=true
+encryption=SSL
+host=smtp.gmail.com
+id=839049611
+name=Google Mail (severyhayden)
+port=465
+storepass=true
+user=severyhayden@gmail.com

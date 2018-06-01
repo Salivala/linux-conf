@@ -1,0 +1,50 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "screenleap_icon_19_19_off.png",
+      "default_popup": "popup.html",
+      "default_title": "Screenleap"
+   },
+   "content_scripts": [ {
+      "css": [ "extension.css" ],
+      "exclude_matches": [ "https://chrome.google.com/webstore/*" ],
+      "js": [ "dispatchcontentscript.js", "contentscript.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   }, {
+      "all_frames": true,
+      "exclude_matches": [ "https://chrome.google.com/webstore/*" ],
+      "js": [ "dispatchcontentscript.js", "iframecontentscript.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   }, {
+      "js": [ "gcal.js" ],
+      "matches": [ "https://www.google.com/calendar/*" ]
+   }, {
+      "js": [ "inboxsdk.js", "gmail.js" ],
+      "matches": [ "https://mail.google.com/*", "https://inbox.google.com/*" ]
+   }, {
+      "js": [ "slack.js" ],
+      "matches": [ "https://*.slack.com/*" ]
+   } ],
+   "content_security_policy": "script-src 'self' https://www.screenleap.com https://d2e4kn0wu3avrd.cloudfront.net; object-src 'self'",
+   "description": "All-in-one tool for sharing your screen and taking screenshots",
+   "icons": {
+      "128": "screenleap_icon_128_128.png",
+      "16": "screenleap_icon_16_16.png",
+      "48": "screenleap_icon_48_48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDe1uqynBsDSLuG6t6AOm8AYgwGdvG5OpPz8eObpgd6LkAVNcId35PgLJojKVrnvXfR1qWX8VSLYDmv4sQW82fZAT7qQXbjIFkmwPBbsagaMaBET0Yk58WzZjLatOKAtCgONaLeMmRd9HhpxUlVRBsivPSfaooxLqoFA1mxBGa91wIDAQAB",
+   "manifest_version": 2,
+   "name": "Screenleap",
+   "permissions": [ "contextMenus", "tabs", "desktopCapture", "\u003Call_urls>", "storage", "clipboardRead", "clipboardWrite", "notifications" ],
+   "sandbox": {
+      "pages": [ "templateCompiler.html" ]
+   },
+   "short_name": "Screenleap",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "16.8.0",
+   "web_accessible_resources": [ "indicator.gif", "screenleap_icon_16_16.png", "screenleap_icon_19_19.png", "share_browser_window.png", "sprite.gif", "share_icons.png" ]
+}

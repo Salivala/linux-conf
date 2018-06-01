@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Screenleap</title>
+    <link rel="stylesheet" type="text/css" href="extension.css"/>
+    <script src="popup.js"></script>
+</head>
+<body id="screenleapExtensionMenu">
+
+<div id="screenleapMessage" style="display:none"></div>
+
+<div id="screenleapMenuOptions">
+    <div id="screenshotLinkDiv">
+        <div class="menu-row"><a id="regionScreenshotLink">Capture region</a></div>
+        <div class="menu-row"><a id="windowScreenshotLink">Capture window</a></div>
+        <div class="menu-row" style="display:none"><a id="screenshotsLink">View your screenshots</a></div>
+    </div>
+    <div id="screenleapShareWarningDiv"><div class="screenleapWarningMessage" id="screenshotDisabledNote">We cannot take a screenshot or start a screen share from this page because it is a system page.</div></div>
+    <div id="shareLinkDiv">
+        <hr>
+        <div class="menu-row disabled"><a id="privateBrowserShareLink">Share your browser privately</a></div>
+        <div class="menu-row disabled"><a id="privateScreenShareLink">Share your screen privately</a></div>
+        <div class="menu-row disabled"><a id="broadcastBrowserLink">Broadcast your browser</a></div>
+        <div class="menu-row disabled"><a id="broadcastScreenLink">Broadcast your screen</a></div>
+        <div class="menu-row" style="display:none"><label><input id="restrictToFirstWindow" type="checkbox">Restrict to first window</label></div>
+        <div class="menu-row" style="display:none"><label><input id="restrictToTab" type="checkbox">Restrict to current tab</label></div>
+    </div>
+    <hr>
+    <div class="menu-row"><a id="screenleapLink">Visit Screenleap site</a></div>
+    <div class="menu-row" style="display:none"><a id="userMenuLink" class="screenleap-indented-menu">Share options</a></div>
+    <div class="menu-row"><a id="signInLink">Sign in</a></div>
+    <div class="menu-row" style="display:none"><a id="signOutLink">Sign out</a></div>
+</div>
+
+<div id="signInPanel" style="display:none">
+    <div class="screenleapWarningMessage" id="signinPanelMessage" style="display:none"></div>
+    <h2><div id="signupLinkDiv"><a href="#" id="signupLink">Don't have an account?</a></div>Sign in</h2>
+    <hr>
+    <div class="label"><label for="emailAddress">Email address</label></div>
+    <div><input id="emailAddress" name="emailAddress" type="text" tabindex="1"/></div>
+    <div class="label"><label for="password">Password</label></div>
+    <div><input type="password" name="password" id="password" tabindex="2" autocomplete="off"/></div>
+    <div><button class="screenleap-flat-button screenleap-green" id="signInButton" tabindex="3" style="margin-right:12px">Sign in</button><button class="screenleap-flat-button screenleap-red" id="cancelButton" tabindex="4">Cancel</button><img id="signInIndicator" src="indicator.gif" class="indicator" alt=""/></div>
+</div>
+
+<div id="signedInOptions" style="display:none">
+    <div id="options" style="display:none">
+        <div class="label">Options</div>
+        <div><input type="checkbox" title="Edit my screenshot after taking it" id="editOnCapture">Enable edit mode</div>
+        <div><input type="checkbox" title="One step crop and capture - screenshot will be captured on mouse release" id="autoCapture">Enable auto capture mode</div>
+        <hr>
+    </div>
+</div>
+
+<div id="presenterControlPanel" style="display:none">
+    <div id="loading" style="display:none">Starting browser share....<img src="indicator.gif" class="indicator" alt=""/></div>
+    <div id="sharing" style="display:none">
+        <div id="sharingStatus">Your screen is <label id="state">SHARED</label><span id="slowNetwork"> (slow connection detected)</span></div>
+        <button id="pauseButton" class="screenleap-flat-button screenleap-orange" style="width:120px">Pause sharing</button><button id="stopButton" class="screenleap-flat-button screenleap-red" style="width:120px">Stop sharing</button><br>
+        <!--Set tabindex to 1 on viewerUrl to get around Chrome bug that won't properly focus on an element-->
+        <!--even when done in js-->
+        <input id="viewerUrl" type="text" readonly="readonly"/>
+		<a id="popupShowAdvanced"> >> Show advanced options</a>
+		<a id="popupHideAdvanced"> << Hide advanced options</a>
+		<form id="popupAdvanced">
+			<datalist id="qualityMarks">
+				<!-- gives us slider hashmarks.
+					Must be same length as qualityOptions in popup.js -->
+				<option value="0"/>
+				<option value="1"/>
+				<option value="2"/>
+				<option value="3"/>
+			</datalist>
+			<div>
+				<span class="popupLabelLeft">speed</span>
+				<input id="quality" type="range" list="qualityMarks" min="0" max="3" step="1" />
+				<span class="popupLabelRight">quality</span>
+			</div>
+
+			<datalist id="throttleMarks">
+				<option value="0"/>
+				<option value="1"/>
+				<option value="2"/>
+				<option value="3"/>
+				<option value="4"/>
+			</datalist>
+			<div>
+				<span class="popupLabelLeft">less data</span>
+				<input id="throttle" type="range" list="throttleMarks" min="0", max="4" step="1"/>
+				<span class="popupLabelRight">faster</span>
+			</div>
+		</form>
+    </div>
+</div>
+</body>
+</html>

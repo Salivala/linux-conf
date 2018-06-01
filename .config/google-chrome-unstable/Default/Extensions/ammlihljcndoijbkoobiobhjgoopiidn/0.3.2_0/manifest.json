@@ -1,0 +1,30 @@
+{
+   "author": "Daniel Cohen \u003Cdcohenb@gmail.com>",
+   "background": {
+      "persistent": true,
+      "scripts": [ "bg.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icons/64.png",
+      "default_popup": "popup_ui.html",
+      "default_title": "Configure tabs hibernate"
+   },
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "description": "Send tabs you don't use to into hibernation to save up on memory usage",
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "512": "icons/512.png",
+      "64": "icons/64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAysAYopLQ4fHG5TjRZvqJ/RxkNy4gOCxMEiRXXN4uEHZlGw4zNFnC4YWzERVNPKVEzbOJO7yNKfvnby4LE7li27GKqOtSNIv2KIOQtH0gRh/2m1viOLR0RZW763a0VHrVa2Z9g1ZMeyaJMfwx5VVy4NKiqhx+945QWLL4gN6mItblKlKbklkYWctOBo4NLVqJF7emtjiSXvpQjx5wwyKMOvbYCSXxIVmmUdyKJUFUObg3TE1ppjh9KCKjd59SUlwla2Pg5D6h2lq1hP7UHAwNUssmfZjV0UG25FBx6XLLDqzMPqOd8yUa5r+LbQUlcNJ1/FPRC7RX1VQ0Q0PjYZfunQIDAQAB",
+   "manifest_version": 2,
+   "name": "Tab Hibernate",
+   "permissions": [ "tabs", "\u003Call_urls>" ],
+   "short_name": "tab-hibernate",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.3.2"
+}

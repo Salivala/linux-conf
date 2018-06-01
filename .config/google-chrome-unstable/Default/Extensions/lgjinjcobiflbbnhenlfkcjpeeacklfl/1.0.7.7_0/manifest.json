@@ -1,0 +1,22 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon.png",
+      "name": "Copy me that!"
+   },
+   "content_security_policy": "default-src 'none'; script-src 'self'",
+   "icons": {
+      "128": "icon128.png",
+      "48": "icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCCqfX02MAJkkYc+l3fcnLnHBKuc1xI4C+GUk1LCo53TzmChBIzgN3vhR0qjS8/zkFwUfXVjhPJreQcL3ehMqaA2N0SQaMYV9H2Az2IYqtpc/dxjsdvBCC/Bv2FlPhnmm+/pOAgCvc+fHvl6JmfcVckOen+OLVopY3r6HG0ajoVZQIDAQAB",
+   "manifest_version": 2,
+   "name": "Copy Me That",
+   "permissions": [ "activeTab", "*://button.copymethat.com/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.7.7",
+   "web_accessible_resources": [ "exists.gif", "spinner_25.gif", "cmt.png" ]
+}

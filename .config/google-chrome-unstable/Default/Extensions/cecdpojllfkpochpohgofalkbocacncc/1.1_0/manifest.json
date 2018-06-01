@@ -1,0 +1,21 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "icon/pi.png"
+      },
+      "default_title": "PlexIt"
+   },
+   "description": "PlexIt for Chrome",
+   "icons": {
+      "128": "icon/pi.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgUZj0YgeFbtLfGGC+COqTjwwyyV3LccXn6mAGUTVNiyZShDmfEqaBXuoFGmsgp5c6bt4U432aRUrjK/1oc7x73XzUJ4ug/DqLHmpyxXIx82CQoLCdC7Kc00gjNdGTYkSCl0o1AYZ9FzEQ9PmKjzMpSRnLC5KEi41S21QaToSTG/BRlMtjw9NCGfwq1HD+S/+oddDTbEr5ZX61yZAzAtP4b0IKgxh0iZ+34Sl/xWJWUYaZkSweohwvMjTjjzRBDlMzIrexGPsvkcZjd0HZHysCwlpb65kYp/xb0ApK4/t02A90Fk/ESMB5cYXTI3bTdIylgKCqxyMONiwQX+bf3OSGQIDAQAB",
+   "manifest_version": 2,
+   "name": "PlexIt",
+   "permissions": [ "tabs", "background", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1"
+}

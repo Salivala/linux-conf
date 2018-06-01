@@ -1,0 +1,37 @@
+[MainWindow]
+Height 900=480
+State=AAAA/wAAAAD9AAAAAAAABkAAAAMAAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1600=820
+Window-Maximized 900x1600=true
+
+[Recent Files]
+File1[$e]=/run/media/hayden/E/public/mscporn/dragons|reptiles/0eb13963ccc0b0ec7ee26284bd1248a0.jpg
+File10[$e]=/run/media/hayden/E/public/mscporn/dragons|reptiles/1-ec31bb286b4f56ebe1b5454621d8d95a.jpg
+File2[$e]=/run/media/hayden/E/public/mscporn/dragons|reptiles/0faee99fb4f76dfff3187b76ec60d8b5.png
+File3[$e]=/run/media/hayden/E/public/mscporn/dragons|reptiles/001_eng.jpg
+File4[$e]=/run/media/hayden/E/public/mscporn/dragons|reptiles/1-001_eng.jpg
+File5[$e]=/run/media/hayden/E/public/mscporn/dragons|reptiles/1-2bfb537b3402eb2859c1364bddfee7b2.png
+File6[$e]=/run/media/hayden/E/public/mscporn/dragons|reptiles/1-4.jpg
+File7[$e]=/run/media/hayden/E/public/mscporn/dragons|reptiles/1-29df5d4c5ff3f0c530911f2bf8bb1c64.jpg
+File8[$e]=/run/media/hayden/E/public/mscporn/dragons|reptiles/1-5de3a03058d194781e3fb876ae93a038.webm
+File9[$e]=/run/media/hayden/E/public/mscporn/dragons|reptiles/1-e8f0e0c1bef9948c1db926b791926934.webm
+Name1[$e]=0eb13963ccc0b0ec7ee26284bd1248a0.jpg
+Name10[$e]=1-ec31bb286b4f56ebe1b5454621d8d95a.jpg
+Name2[$e]=0faee99fb4f76dfff3187b76ec60d8b5.png
+Name3[$e]=001_eng.jpg
+Name4[$e]=1-001_eng.jpg
+Name5[$e]=1-2bfb537b3402eb2859c1364bddfee7b2.png
+Name6[$e]=1-4.jpg
+Name7[$e]=1-29df5d4c5ff3f0c530911f2bf8bb1c64.jpg
+Name8[$e]=1-5de3a03058d194781e3fb876ae93a038.webm
+Name9[$e]=1-e8f0e0c1bef9948c1db926b791926934.webm
+
+[SideBar-BrowseMode]
+IsVisible=true
+
+[SideBar-FullScreenMode]
+IsVisible=false
+
+[SideBar-ViewMode]
+IsVisible=true

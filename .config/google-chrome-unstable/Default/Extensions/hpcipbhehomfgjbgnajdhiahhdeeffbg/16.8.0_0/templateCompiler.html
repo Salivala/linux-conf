@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="background_tools.js" type="text/javascript"></script>
+    <script src="underscore.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        var templates = {};
+        window.addEventListener('message', function(event) {
+            var command = event.data.command;
+            var context = event.data.context;
+            switch (command) {
+                case 'compile':
+                    templates[context.name] = _.template(context.source);
+                    event.source.postMessage({command: 'compiled', name: context.name}, event.origin);
+                    break;
+                case 'render':
+                    event.source.postMessage({command: 'rendered', html: templates[context.name](context.json)}, event.origin);
+                    break;
+                default:
+                    console.log('unknown command: ' + command);
+            }
+        });
+    </script>
+</body>
+</html>

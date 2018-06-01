@@ -1,0 +1,5 @@
+[Favorites-org.kde.plasma.kickoff.favorites.instance-3-ec5c2385-d3e3-4581-b053-95d859b4e5ae]
+ordering=applications:org.kde.kontact.desktop,applications:systemsettings.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.ktpcontactlist.desktop,applications:org.kde.konsole.desktop,applications:org.kde.discover.desktop,applications:google-chrome-unstable.desktop
+
+[Favorites-org.kde.plasma.kickoff.favorites.instance-3-global]
+ordering=applications:org.kde.kontact.desktop,applications:systemsettings.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.ktpcontactlist.desktop,applications:org.kde.konsole.desktop,applications:org.kde.discover.desktop,applications:google-chrome-unstable.desktop

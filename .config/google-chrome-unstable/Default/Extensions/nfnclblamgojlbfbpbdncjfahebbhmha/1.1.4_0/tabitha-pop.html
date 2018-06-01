@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<!-- 
+    This file belongs to: Tabitha Tab Management System
+
+    Copyright (C) 2014-  Sebastian Witek (http://sebastianwitek.com)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+    Author: Sebastian Witek
+    Date: Thursday, September ‎18, ‎2014
+    File: tabitha-pop.html
+-->
+
+<!-- 
+    Glyphicons used provided as part of Glyphicons FREE package taken from http://GLYPHICONS.com    
+    released under the Creative Commons Attribution 3.0 Unported (CC BY 3.0) license (http://creativecommons.org/licenses/by/3.0/). 
+-->
+
+<html>
+    <head>
+        <!-- CSS & Font -->
+        <link rel="stylesheet" type="text/css" href="css/tabitha-pop-min.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+        <!-- JS Main -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/tabitha-pop-compiled.js"></script>
+    </head>
+
+    <body>  
+
+        <!-- Tab Information -->
+        <div id='tabInfoContainer'>
+            <img src="glyph-refresh.png" id='refresh' title="Refresh the tab list">
+            <div class='notifier'></div>
+            <div class='tipNotifier'></div>
+            <div id='tabCount'></div>
+            <div id='tabsOpenText'>Tabs Open</div>
+        </div>
+        <!-- Retrieve Alternates -->
+        <div id='retrieveInfo' title='I knew you&#39;d be back.'>
+            <div class='back'><img src="glyph-back.png" title="Return to main page" id="backicon"></div>
+            <div class='notifier'></div>
+            <div id='retrieveCount'></div>
+            <div id='retrieveText'>Recently Closed</div>
+        </div>
+
+        <!-- Tools & Settings Button -->
+        <img src="tab128.png" id='tools' title="Tools and Settings">
+        <!-- Main Dropdown Menu -->
+        <div class="settings-menu" id="main-menu">
+            <ul class="settings-list">
+                <li class="menubtn" id="close" title="Close selected tabs">Close</li>
+                <li class="menubtn" id="reload" title="Reload selected tabs">Reload</li>
+                <li class="menubtn" id="pin" title="Pin / unpin selected tabs">Pin / Unpin</li>
+                <li class="menubtn" id="bookmark" title="Bookmark selected tabs">Bookmark</li>
+                <li class="menubtn" id="bclose" title="Bookmark &amp; close selected tabs">Bookmark &amp; Close</li>
+                <li class="menubtn" id="combine" title="Combine selected tabs">Combine</li>
+                <li class="menubtn" id="retrieve" title="View recently closed tabs">Recently Closed</li>
+                <li class="hdivider"></li>
+                <li class="menubtn" id="sort-title" title="Sort all tabs alphabetically">Sort by Title</li>
+                <li class="menubtn" id="sort-age" title="Sort all tabs by age">Sort by Age</li>
+                <li class="menubtn" id="sort-url" title="Group tabs by website">Group by Website</li>
+                <li class="hdivider"></li>
+                <li class="menubtn" id="settings" title="Extension Options">Options</li>
+                <li class="hdivider"></li>
+                <li class="social">
+                    <a target="_blank" href="https://www.facebook.com/tabithachrome"><img src="fb.png" class="socialicon" title="Share on Facebook"></a>
+                    <a target="_blank" href="https://plus.google.com/110924441250507880152"><img src="gp.png" class="socialicon" title="Share on Google+"></a>
+                    <a target="_blank" href="https://twitter.com/TabithaChrome"><img src="tw.png" class="socialicon" title="Tweet about Tabitha"></a>
+                </li>
+            </ul>
+        </div>
+        <!-- Alternate (Retrieval) Dropdown Menu -->
+        <div class="settings-menu" id="retrieve-menu">
+            <ul class="settings-list">
+                <li class="menubtn" id="restore" title="Recover selected tabs">Recover</li>
+                <li class="hdivider"></li>
+                <li class="menubtn" id="purge" title="Permanently delete selected tabs">Purge</li>
+            </ul>
+        </div>
+        <!-- Tab Data -->
+        <div id='tabContainer'></div>
+        <div id='retrieveContainer'></div>
+    </body>
+</html>

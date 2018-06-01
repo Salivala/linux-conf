@@ -1,0 +1,137 @@
+{
+   "add_site_to_list": {
+      "message": "Website zur Liste hinzufügen"
+   },
+   "brightness": {
+      "message": "Helligkeit"
+   },
+   "change_browser_theme": {
+      "message": "Ändern Sie das Browserthema"
+   },
+   "contrast": {
+      "message": "Kontrast"
+   },
+   "custom_browser_theme_off": {
+      "message": "Standard"
+   },
+   "custom_browser_theme_on": {
+      "message": "Maßgeschneidert"
+   },
+   "dark": {
+      "message": "Dunkel"
+   },
+   "donate": {
+      "message": "Spenden"
+   },
+   "engine_dynamic": {
+      "message": "Dynam."
+   },
+   "engine_filter": {
+      "message": "Filter"
+   },
+   "engine_filter_plus": {
+      "message": "Filter+"
+   },
+   "engine_static": {
+      "message": "Statisch"
+   },
+   "extension_description": {
+      "message": "Dunkles Design für jede Website. Schonen Sie Ihre Augen, verwenden Sie Dark Reader für die Nacht und tägliches Surfen."
+   },
+   "filter": {
+      "message": "Filter"
+   },
+   "grayscale": {
+      "message": "Graustufen"
+   },
+   "help": {
+      "message": "Hilfe"
+   },
+   "invert_listed_only": {
+      "message": "Invertieren nur"
+   },
+   "light": {
+      "message": "Licht"
+   },
+   "loading_please_wait": {
+      "message": "Laden, bitte warten"
+   },
+   "mode": {
+      "message": "Modus"
+   },
+   "more": {
+      "message": "Mehr"
+   },
+   "news": {
+      "message": "Nachricht"
+   },
+   "not_invert_listed": {
+      "message": "Nicht invertieren"
+   },
+   "off": {
+      "message": "Aus"
+   },
+   "on": {
+      "message": "Ein"
+   },
+   "only_for": {
+      "message": "Nur für"
+   },
+   "only_for_description": {
+      "message": "Wenden Einstellungen nur auf die aktuelle Site an"
+   },
+   "open_dev_tools": {
+      "message": "Werkzeuge"
+   },
+   "page_in_dark_list": {
+      "message": "Seite befindet sich in der\nglobalen dunklen Liste"
+   },
+   "page_protected": {
+      "message": "Diese Seite ist durch\nBrowser geschützt"
+   },
+   "privacy": {
+      "message": "Datenschutz"
+   },
+   "read_more": {
+      "message": "Weiterlesen"
+   },
+   "select_font": {
+      "message": "Wählen Sie eine Schriftart aus"
+   },
+   "sepia": {
+      "message": "Sepia"
+   },
+   "setup_add_site_hotkey": {
+      "message": "Richten Sie Hotkey zum Hinzufügen der Site"
+   },
+   "setup_hotkey_toggle_extension": {
+      "message": "Setup-Erweiterung\numschalten Hotkey"
+   },
+   "setup_hotkey_toggle_site": {
+      "message": "Aktuellen Website Toggle\nHotkey einrichten"
+   },
+   "site_list": {
+      "message": "Websiteliste"
+   },
+   "store_listing": {
+      "message": "Zum Schutz der Augen ermöglicht diese Erweiterung das Erstellen dunkler Farblayouts für Webseiten. Dabei invertiert Dark Reader helle Farben, macht sie kontrastreich und nachts gut lesbar. \n\nHelligkeit, Kontrast, Sepia-Filter, Dark-Modus, Schrifteinstellungen und Ignorier-Liste können manuell verwaltet und individuell eingestellt werden.\n\nDark Reader zeigt dabei keine Werbeanzeigen an und sendet keine Benutzerdaten an einen beliebigen Ort. Es ist vollständig Open-Source https://github.com/darkreader/darkreader\n\nBeachten Sie, dass Sie ähnliche Erweiterungen deaktivieren, bevor Sie die App installieren. Genießen und Gucken!"
+   },
+   "text_stroke": {
+      "message": "Textstrich"
+   },
+   "theme_generation_mode": {
+      "message": "Themengenerierungsmodus"
+   },
+   "toggle": {
+      "message": "Schalten"
+   },
+   "toggle_current_site": {
+      "message": "Aktuelle Seite umschalten"
+   },
+   "toggle_extension": {
+      "message": "Erweiterung schalten"
+   },
+   "try_experimental_theme_engines": {
+      "message": "Probiere **experimentelle** Theme-Engines aus:\n**Filter+** bewahrt die Farbsättigung, verwendet GPU\n**Statisches** generiert einfaches schnelles Thema\n**Dynamisches Thema** analysiert Farben und Bilder"
+   }
+}

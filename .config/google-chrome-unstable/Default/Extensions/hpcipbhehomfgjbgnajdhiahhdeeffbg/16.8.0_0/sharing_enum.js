@@ -1,0 +1,1 @@
+const sharingStates={NONE:"none",STARTING:"starting",SHARING:"sharing",PAUSED:"paused",CONNECTING:"connecting",RECONNECTING:"reconnecting",STOPPING:"stopping"},sharingActions={START:"start",STOP:"stop",RESUME:"resume",PAUSE:"pause"};

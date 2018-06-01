@@ -1,0 +1,54 @@
+kcminputrc Mouse cursorTheme 'breeze_cursors'
+!/home/hayden/.config/kcminputrc
+!/etc/xdg/kcminputrc
+!/home/hayden/.local/share/config/kcminputrc
+!/home/hayden/.local/share/flatpak/exports/share/config/kcminputrc
+!/var/lib/flatpak/exports/share/config/kcminputrc
+!/usr/local/share/config/kcminputrc
+!/usr/share/config/kcminputrc
+*
+kcminputrc Mouse cursorSize ''
+!/home/hayden/.config/kcminputrc
+!/etc/xdg/kcminputrc
+!/home/hayden/.local/share/config/kcminputrc
+!/home/hayden/.local/share/flatpak/exports/share/config/kcminputrc
+!/var/lib/flatpak/exports/share/config/kcminputrc
+!/usr/local/share/config/kcminputrc
+!/usr/share/config/kcminputrc
+*
+ksplashrc KSplash Theme Breeze
+/home/hayden/.config/ksplashrc
+!/etc/xdg/ksplashrc
+!/home/hayden/.local/share/config/ksplashrc
+!/home/hayden/.local/share/flatpak/exports/share/config/ksplashrc
+!/var/lib/flatpak/exports/share/config/ksplashrc
+!/usr/local/share/config/ksplashrc
+!/usr/share/config/ksplashrc
+*
+ksplashrc KSplash Engine KSplashQML
+/home/hayden/.config/ksplashrc
+!/etc/xdg/ksplashrc
+!/home/hayden/.local/share/config/ksplashrc
+!/home/hayden/.local/share/flatpak/exports/share/config/ksplashrc
+!/var/lib/flatpak/exports/share/config/ksplashrc
+!/usr/local/share/config/ksplashrc
+!/usr/share/config/ksplashrc
+*
+kdeglobals KScreen ScreenScaleFactors ''
+/home/hayden/.config/kdeglobals
+!/etc/xdg/kdeglobals
+!/home/hayden/.local/share/config/kdeglobals
+!/home/hayden/.local/share/flatpak/exports/share/config/kdeglobals
+!/var/lib/flatpak/exports/share/config/kdeglobals
+!/usr/local/share/config/kdeglobals
+!/usr/share/config/kdeglobals
+*
+kcmfonts General forceFontDPI 0
+!/home/hayden/.config/kcmfonts
+!/etc/xdg/kcmfonts
+!/home/hayden/.local/share/config/kcmfonts
+!/home/hayden/.local/share/flatpak/exports/share/config/kcmfonts
+!/var/lib/flatpak/exports/share/config/kcmfonts
+!/usr/local/share/config/kcmfonts
+!/usr/share/config/kcmfonts
+*

@@ -1,0 +1,18 @@
+{
+   "author": "Scott Irvin, sirvin.dev@gmail.com",
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "description": "Modifies your User-Agent string to contain the name of Manjaro Linux distribution.",
+   "icons": {
+      "1024": "manjaro_1024.png",
+      "128": "manjaro_128.png",
+      "48": "manjaro_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw6Bd1mgWpKNYLMCiwM4CXIZUUMUUBalHvG+bq7rPkOjxgWKXuEMuf4/S4IX3a4J0/JfoRsbj/UxOhj+m/ceY/HG7n3x4SWD4yKvEy2l4FbwTnsGMUyckfS5jfr8MgZ06+bJIstDgGXgHQHQQ2IH12v/zbQPUiEk2nadBKt6JQDzBgRhqjSAlTmxK11PhbgOpkr3+QI/8zIvUyGaG9Nabl2LCcFqYQn6TcS2OIiSE0u1G/xJBObDJuTzt7s3QyWmWJ3z5GsO7zpxrtlPamOj4moMLMfKA9Tx6s35+OCZSfVuoUFbGIM2QoFAhOUVt+OBLxQdiTRVRhbLPoPWzeAF/aQIDAQAB",
+   "manifest_version": 2,
+   "name": "Manjaro User Agent",
+   "permissions": [ "webRequest", "webRequestBlocking", "*://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.1"
+}

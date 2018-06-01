@@ -1,0 +1,41 @@
+2018/05/19-21:17:03.210 18955 Reusing MANIFEST /home/hayden/.config/google-chrome-unstable/Default/IndexedDB/https_cialu.net_0.indexeddb.leveldb/MANIFEST-000001
+2018/05/19-21:17:03.210 18955 Recovering log #6
+2018/05/19-21:17:03.210 18955 Reusing old log /home/hayden/.config/google-chrome-unstable/Default/IndexedDB/https_cialu.net_0.indexeddb.leveldb/000006.log 
+2018/05/19-21:17:03.666 19493 Level-0 table #10: started
+2018/05/19-21:17:03.667 19059 Current memtable full; waiting...
+2018/05/19-21:17:03.677 19493 Level-0 table #10: 398 bytes OK
+2018/05/19-21:17:03.685 19493 Delete type=0 #6
+2018/05/19-21:17:03.685 19493 Level-0 table #12: started
+2018/05/19-21:17:03.685 19493 Level-0 table #12: 0 bytes OK
+2018/05/19-21:17:03.691 19493 Delete type=0 #9
+2018/05/19-21:17:03.691 19493 Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
+2018/05/19-21:17:04.522 19059 Current memtable full; waiting...
+2018/05/19-21:17:04.522 19493 Level-0 table #14: started
+2018/05/19-21:17:04.530 19493 Level-0 table #14: 396 bytes OK
+2018/05/19-21:17:04.540 19493 Delete type=0 #11
+2018/05/19-21:17:04.540 19493 Level-0 table #16: started
+2018/05/19-21:17:04.540 19493 Level-0 table #16: 0 bytes OK
+2018/05/19-21:17:04.548 19493 Delete type=0 #13
+2018/05/19-21:17:04.548 19493 Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at '\x00\x03\x00\x00\x05' @ 26 : 1
+2018/05/19-21:17:04.548 19493 Compacting 1@0 + 1@1 files
+2018/05/19-21:17:04.555 19493 Generated table #17@0: 4 keys, 468 bytes
+2018/05/19-21:17:04.555 19493 Compacted 1@0 + 1@1 files => 468 bytes
+2018/05/19-21:17:04.563 19493 compacted to: files[ 0 1 1 0 0 0 0 ]
+2018/05/19-21:17:04.563 19493 Delete type=2 #14
+2018/05/19-21:17:04.563 19493 Delete type=2 #10
+2018/05/19-21:17:04.563 19493 Manual compaction at level-0 from '\x00\x03\x00\x00\x05' @ 26 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
+2018/05/19-21:17:06.462 18959 Current memtable full; waiting...
+2018/05/19-21:17:06.462 19493 Level-0 table #19: started
+2018/05/19-21:17:06.472 19493 Level-0 table #19: 398 bytes OK
+2018/05/19-21:17:06.479 19493 Delete type=0 #15
+2018/05/19-21:17:06.480 19493 Level-0 table #21: started
+2018/05/19-21:17:06.480 19493 Level-0 table #21: 0 bytes OK
+2018/05/19-21:17:06.486 19493 Delete type=0 #18
+2018/05/19-21:17:06.486 19493 Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at '\x00\x04\x00\x00\x05' @ 36 : 1
+2018/05/19-21:17:06.486 19493 Compacting 1@0 + 1@1 files
+2018/05/19-21:17:06.497 19493 Generated table #22@0: 5 keys, 536 bytes
+2018/05/19-21:17:06.497 19493 Compacted 1@0 + 1@1 files => 536 bytes
+2018/05/19-21:17:06.504 19493 compacted to: files[ 0 1 1 0 0 0 0 ]
+2018/05/19-21:17:06.505 19493 Delete type=2 #17
+2018/05/19-21:17:06.505 19493 Delete type=2 #19
+2018/05/19-21:17:06.505 19493 Manual compaction at level-0 from '\x00\x04\x00\x00\x05' @ 36 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)

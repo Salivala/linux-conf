@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://www.screenleap.com/css/style.css" type="text/css">
+</head>
+<body class="app app-colors screenshots">
+<style type="text/css">
+    .top-action-bar {
+        margin-top: 24px;
+        min-width: 300px;
+    }
+    #notSignedInWarning,#saveError {
+        font-size: 13px;
+        color: #f00;
+        font-style: italic;
+        white-space: nowrap;
+        display: table;
+        margin: 0 auto;
+    }
+    .link-button, .email-button, .twitter-button, .facebook-button, .download-button {
+        background-image: url(share_icons.png);
+    }
+</style>
+<div id="appTopBar" class="screenleap">
+    <div id="rightNav">
+        <ul>
+            <li id="profileLink" class="only-if-authenticated menu-link"><span class="handle"></span> <span style="font-size:14px">&#9662;</span></li>
+            <li id="topBarFeedbackLink"><a href="#" title="Help us improve Screenleap by providing us with your feedback" class="feedbackLink">Feedback</a></li>
+            <li id="topBarSignInLink"><a href="#">Sign in</a></li>
+        </ul>
+    </div>
+    <div id="logo"><a href="http://www.screenleap.com/" class="screenleap-logo">Screenleap</a></div> <div id="status"></div><div id="notSignedInWarning" style="display:none">Your screenshot will be deleted after 3 days unless you <a id="warningSignInLink" href="#" class="underline">sign in</a>.</div>
+    <div id="saveError" style="display:none">There is a problem with the screenshot feature on our servers and your screenshot cannot be processed at this time.  We apologize for the inconvenience.</div>
+    <div id="profileMenu" class="only-if-authenticated menu" style="visibility:hidden">
+        <div class="menu-top"></div>
+        <div class="profile"><span class="first-name"></span> <span class="last-name"></span><br>
+            <span class="email-address"></span><br></div>
+        <a class="only-if-authenticated feedbackLink" title="Help us improve Screenleap by providing us with your feedback">Feedback</a>
+    </div>
+</div>
+<div id="screenshotContainer" class="screenshot-detail-container"></div>
+<script id="screenshotTemplate" type="text/template">
+    <div class="center" style="padding:0 24px">
+        <div class="top-action-bar">
+            <div class="share-options" style="visibility:hidden">
+                <b>Share:</b> <span class="has-tooltip"><img src="sprite.gif" width="24" height="24" class="link-button" alt=""/><span id="linkTooltip" class="tooltip">Link to this screenshot</span></span><span class="has-tooltip"><img src="sprite.gif" width="24" height="24" class="email-button" alt=""/><span id="emailTooltip" class="tooltip">Email</span></span><span class="has-tooltip"><img src="sprite.gif" width="24" height="24" class="twitter-button" alt=""/><span id="twitterTooltip" class="tooltip">Tweet this screenshot</span></span><span class="has-tooltip"><img src="sprite.gif" width="24" height="24" class="facebook-button" alt=""/><span id="facebookTooltip" class="tooltip">Share on Facebook</span></span><span class="has-tooltip"><img src="sprite.gif" width="24" height="24" class="download-button" alt=""/><span id="downloadTooltip" class="tooltip">Download</span></span>
+            </div>
+            <% if (!screenshotSetId) { %><a class="action publish" title="Publish this screenshot to your public feed">Publish</a><% } %>
+            <a class="action green feed disabled" title="Go to your screenshot feed"<% if (createdByUser == null) { %> style="display:none"<% } %>>Go to your feed</a>
+            <a class="action save" title="Save this screenshot to your Screenleap account">Save</a>
+            <a class="action discard" title="Discard this screenshot">Discard</a>&nbsp;<span id="uploadingIndicator" style="visibility:hidden">Uploading...</span>
+        </div>
+        <div class="position:relative">
+            <div class="screenshot" style="width:<%= width %>px">
+                <div class="detail">
+                    <div class="screenshot-title content-editable placeholder" contenteditable="true"><%= title %></div>
+                    <div class="screenshot-description content-editable placeholder" contenteditable="true"><%= description %></div>
+                    <div class="relative">
+                        <div class="canvas-wrapper" style="position:relative">
+                            <canvas width="<%= width %>" height="<%= height %>"></canvas>
+                        </div>
+                        <table class="caption">
+                            <tr>
+                                <td class="source-info"><a href="<%= sourceUrl %>" target="_blank"><%= sourceUrl %></a></td>
+                                <!--
+                                <div class="creator-info"><% if (createdByUser && createdByUser.emailAddress) { %>added by <%= createdByUser.firstName %> <%= createdByUser.lastName %><% } %></div>
+                                -->
+                                <% if (dateCreated != null) { dateCreatedDate = new Date(dateCreated); %><td class="creator-info">added on <%= dateCreatedDate.getFullYear() == new Date().getFullYear() ? formatDay(dateCreatedDate) : formatDateWithYear(dateCreatedDate) %> at <%= formatTime(dateCreatedDate) %></td><% } %>
+                            </tr>
+                        </div>
+                    </div>
+                </div>
+                <div class="action-bar">
+                    <div class="action-bar-actions action-bar-actions-visible>">
+                        <div id="toolsPanel">
+    <div id="toolsPanelBar"></div>
+    <div id="tools" class="clearfix">
+        <a id="pencil" title="Pencil tool"></a> <a id="line" title="Line tool"></a>
+        <a id="rectangle" title="Rectangle tool"></a> <a id="ellipse" title="Ellipse tool"></a>
+        <a id="solid-rectangle" title="Solid rectangle tool"> <a id="highlight" title="Highlight tool"></a></a>
+        <a id="text" title="Text tool"></a> <a id="arrow" title="Arrow tool"></a>
+        <a id="undo" title="Undo last action" class="disabled"></a> <a id="redo" title="Redo last action" class="disabled"></a>
+        <hr>
+        <a id="color" title="Select the color"><span></span></a> <a id="size" title="Select the line width" style="display:none"><span></span></a> <a id="fontSize" title="Select the font size" style="display:none"><span></span></a>
+    </div>
+    <div id="colorOptions" style="display:none">
+        <a class="background-000000"></a> <a class="background-ffffff"></a>
+        <a class="background-ff0000"></a> <a class="background-ff5f00"></a>
+        <a class="background-ff9900"></a> <a class="background-ffcc00"></a>
+        <a class="background-ffff00"></a> <a class="background-bbe806"></a>
+        <a class="background-3ace0c"></a> <a class="background-00ff00"></a>
+        <a class="background-0000ff"></a> <a class="background-0c9bce"></a>
+        <a class="background-7d0cce"></a> <a class="background-ce0c85"></a>
+    </div>
+    <div id="sizeOptions" style="display:none">
+        <a class="size-1"></a> <a class="size-3"></a>
+        <a class="size-5"></a> <a class="size-7"></a>
+        <a class="size-9"></a> <a class="size-11"></a>
+        <a class="size-13"></a> <a class="size-15"></a>
+        <a class="size-17"></a> <a class="size-19"></a>
+    </div>
+    <div id="fontSizeOptions" style="display:none">
+        <a class="font-size-12px"></a> <a class="font-size-24px"></a>
+        <a class="font-size-36px"></a> <a class="font-size-48px"></a>
+        <a class="font-size-60px"></a> <a class="font-size-72px"></a>
+        <a class="font-size-84px"></a> <a class="font-size-96px"></a>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="link-screenshot-panel screenleap-dialog" style="display:none">
+            <div class="copied-to-clipboard positive float-right" style="display:none">(copied to clipboard)</div>
+            <h4>Link to this screenshot</h4>
+            <hr>
+            <span class="public-share-link-info"<% if (!screenshotSetId) { %> style="display:none"<% } %>>
+                <div class="label bold">Published:</div>
+                <input class="public-share-link" type="text" readonly="readonly" value="<% if (createdByUser) { %><%= webServerBaseUrl %>/<%= createdByUser.handle %>/screenshots/<%= screenshotId %><% } %>"/><br>
+                <div>This link only works while this screenshot is published. It will no longer work if you unpublish this screenshot.</div>
+                <br>
+            </span>
+            <div class="label bold">Private:</div>
+            <input class="private-share-link" type="text" readonly="readonly" value="<%= webServerBaseUrl %><%= viewUrl %>"/><br>
+            <div>Anyone you share this link with will be able to view this screenshot (even if it's not published).</div>
+            <br>
+            <button class="flat-button green close-link-panel">Close</button>
+        </div>
+        <div class="email-screenshot-panel screenleap-dialog" style="display:none">
+            <form>
+                <h4>Email this screenshot to friends</h4>
+                <hr>
+                <div class="label"><label>Email addresses</label></div>
+                <div class="field" style="margin-bottom:4px"><textarea name="shareEmailAddressField" class="share-email-address-field placeholder" rows="5" cols="60"></textarea></div>
+            </form>
+            <button class="flat-button green send-email">Send</button><button class="flat-button red close-panel">Cancel</button>
+        </div>
+    </div>
+</script>
+<div id="progressPanel" class="screenleap-dialog" style="display:none">
+    <span id="progressLabel"></span>...<img src="indicator.gif" class="indicator" alt=""/>
+    <div id="progressBar"></div>
+</div>
+<div id="signInPanel" class="screenleap-dialog" style="display:none">
+    <form id="signUpForm">
+        <h4 id="signInPanelTitle">You must sign in to access this feature.</h4>
+        <hr>
+        <div class="label"><label for="emailAddress">Email address</label></div>
+        <div class="field"><input type="text" id="emailAddress" name="emailAddress" autocorrect="off" tabindex="1"/></div>
+        <div class="label"><label for="password">Password</label></div>
+        <div class="field"><input type="password" name="password" id="password" tabindex="2"/></div>
+        <div id="newAccountFields" style="display:none">
+            <div class="label"><label for="confirmPassword">Confirm password</label></div>
+            <div class="field"><input type="password" name="confirmPassword" id="confirmPassword" tabindex="2"/></div>
+            <div class="label"><label for="firstName">First name</label></div>
+            <div class="field"><input type="text" name="firstName" id="firstName" autocorrect="off" tabindex="3"/></div>
+            <div class="label"><label for="lastName">Last name</label></div>
+            <div class="field"><input type="text" name="lastName" id="lastName" autocorrect="off" tabindex="4"/></div>
+            <div class="label"><label for="handle">Handle</label></div>
+            <div class="field"><input type="text" name="handle" id="handle" tabindex="5" size="40" maxlength="64" value="" placeholder="Letters, numbers, and underscores only"/><div id="handleAvailability"></div></div>
+        </div>
+    </form>
+    <button class="flat-button green" id="signInButton" tabindex="6" style="margin-right:12px">Sign in</button><button class="flat-button red" id="signInCancelButton" tabindex="7">Cancel</button><img id="signInIndicator" src="indicator.gif" class="indicator" alt=""/> <a id="signUpLink" href="#" class="underline">Don't have an account?</a><a id="signInLink" href="#" class="underline" style="display:none">Already have an account?</a>
+</div>
+<form id="imgDownload" method="post" style="display:none">
+    <input type="hidden" id="imageDataString" name="imageDataString"/>
+    <input type="hidden" id="includeMarkups" name="includeMarkups"/>
+</form>
+<div id="mBar" class="m-bar"><div class="clearfix"><div class="bar-con"><div class="float-right"><a id="mBarMsgClose" href="#" class="button">OK</a></div><div id="mBarMsg"></div></div></div></div>
+<div id="wBar" class="w-bar"><div class="clearfix"><div class="bar-con"><div class="float-right"><a id="wBarMsgClose" href="#" class="button">OK</a></div><div id="wBarMsg"></div></div></div></div>
+<div id="eBar" class="e-bar"><div class="clearfix"><div class="bar-con"><div class="float-right"><a id="eBarMsgClose" href="#" class="button">OK</a></div><div id="eBarMsg"></div></div></div></div>
+<script src="jquery.min.js" type="text/javascript"></script>
+<script src="jquery-ui.min.js" type="text/javascript"></script>
+<script src="underscore.min.js" type="text/javascript"></script>
+<script src="backbone-min.js" type="text/javascript"></script>
+<script src="mousetrap.min.js" type="text/javascript"></script>
+<script src="https://www.screenleap.com/js/tools.min.js" type="text/javascript"></script>
+<script src="https://www.screenleap.com/js/main.min.js" type="text/javascript"></script>
+<script src="https://www.screenleap.com/js/markup-canvas.min.js" type="text/javascript"></script>
+<script src="https://www.screenleap.com/js/screenshot-common.min.js" type="text/javascript"></script>
+<script src="https://www.screenleap.com/js/screenshot.min.js" type="text/javascript"></script>
+<script src="markupPage.js" type="text/javascript"></script>
+</body>
+</html>

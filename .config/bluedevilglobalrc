@@ -1,0 +1,8 @@
+[Adapters]
+E8:B1:FC:6E:58:C4_powered=true
+
+[Devices]
+connectedDevices=
+
+[Global]
+bluetoothBlocked=false

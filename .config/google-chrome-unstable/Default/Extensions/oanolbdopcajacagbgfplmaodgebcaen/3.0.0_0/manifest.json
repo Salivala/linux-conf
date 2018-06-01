@@ -1,0 +1,19 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://www.smshare.fr/account/send-sms.html"
+      },
+      "urls": [ "http://www.smshare.fr/" ]
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "icons": {
+      "128": "logo-bleu2.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCu8ngIlcaMcNSNGOODRQ1RwY3PKke+4LuFxykDZpIb/et1Ff+8ksbIoBO4sBMH8Gw9PkBGZpUux2jcwXAZCp45np+Ms7gOvsO/M64kffDgbOPe8B40Ung827ksPcCm1TnIWWMRhY5vOoePKrTgTGnY9HdgcalbL5pngoXbHtn3WwIDAQAB",
+   "manifest_version": 2,
+   "name": "Smshare ★ SMS and Social Media Share [App]",
+   "short_name": "Smshare ★ SMS",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.0.0"
+}

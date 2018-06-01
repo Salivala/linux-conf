@@ -1,0 +1,21 @@
+[1]
+Active=1
+Sessions=1
+
+[Number]
+NumberOfSessions=1
+NumberOfWindows=1
+
+[Session1]
+Encoding=UTF-8
+LocalTab=%d : %n
+Profile[$e]=FALLBACK/
+RemoteTab=(%u) %H
+SessionGuid={3a04460a-ac02-4839-8868-c9ff63b42384}
+WorkingDir[$e]=$HOME/git/linux-conf
+
+[WindowProperties1]
+ClassName=Konsole::MainWindow
+ObjectName=MainWindow#1
+State=AAAA/wAAAAD9AAAAAAAAAxwAAAICAAAABAAAAAQAAAAIAAAACPwAAAAA
+Window-Maximized 900x1600=true

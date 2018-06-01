@@ -1,0 +1,62 @@
+{
+   "background": {
+      "scripts": [ "js/tabitha-back-compiled.js" ]
+   },
+   "browser_action": {
+      "default_icon": "tab19.png",
+      "default_name": "Tabitha",
+      "default_popup": "tabitha-pop.html",
+      "default_title": "Tabitha"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "chromeos": "Alt+T",
+            "linux": "Alt+T",
+            "mac": "Command+Shift+T",
+            "windows": "Alt+T"
+         }
+      },
+      "close": {
+         "description": "Quick close",
+         "suggested_key": {
+            "chromeos": "Alt+X",
+            "linux": "Alt+X",
+            "mac": "MacCtrl+X",
+            "windows": "Alt+X"
+         }
+      },
+      "combine": {
+         "description": "Quick combine",
+         "suggested_key": {
+            "chromeos": "Alt+C",
+            "linux": "Alt+C",
+            "mac": "MacCtrl+C",
+            "windows": "Alt+C"
+         }
+      },
+      "pin": {
+         "description": "Quick pin",
+         "suggested_key": {
+            "chromeos": "Alt+P",
+            "linux": "Alt+P",
+            "mac": "MacCtrl+P",
+            "windows": "Alt+P"
+         }
+      }
+   },
+   "description": "Own your tabs.",
+   "icons": {
+      "128": "tab128.png",
+      "16": "tab16.png",
+      "48": "tab48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh1n+SXUnPrZIv0/z1ffedIcy31RP4NJcjI23YBK715BapDfTnVEXyeebyalrpokaiAmHFJAtbqyaQxXBcps6SMSMA1rgfjwEi7VfTPCXsr0eebpBfWflZ4No2QGNTvVm6viLfLgc0ZAuK6VrNNc2LIIYkFYVHtVO9ye2faffF6nqm3X9Zt3RlhwUq0Qi8IkPgeBAIvoYPeko8LaChHHpNyUOfxMWGtGjZ0MVRCRds1qlFpok8JMXU/o3jENIyPePYZslkjHRpF6nlHV4xg10YcQdnWK5t1osr6g5Lac2Z7iW4tqGk2ylHYlSxorJwjplZpU3st/UeFmMva2DPGCxxQIDAQAB",
+   "manifest_version": 2,
+   "name": "Tabitha Tab Manager",
+   "options_page": "tabitha-opt.html",
+   "permissions": [ "tabs", "storage", "bookmarks" ],
+   "short_name": "Tabitha",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.4"
+}

@@ -1,0 +1,9 @@
+2018/05/19-21:16:07.370 18955 Reusing MANIFEST /home/hayden/.config/google-chrome-unstable/Default/IndexedDB/https_cialu.net_0.indexeddb.leveldb/MANIFEST-000001
+2018/05/19-21:16:07.929 18959 Current memtable full; waiting...
+2018/05/19-21:16:07.929 19493 Level-0 table #5: started
+2018/05/19-21:16:07.938 19493 Level-0 table #5: 430 bytes OK
+2018/05/19-21:16:07.945 19493 Delete type=0 #3
+2018/05/19-21:16:07.946 19493 Level-0 table #7: started
+2018/05/19-21:16:07.946 19493 Level-0 table #7: 0 bytes OK
+2018/05/19-21:16:07.963 19493 Delete type=0 #4
+2018/05/19-21:16:07.963 19493 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

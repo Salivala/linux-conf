@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<!-- 
+    This file belongs to: Tabitha Tab Management System
+
+    Copyright (C) 2014-  Sebastian Witek (http://sebastianwitek.com)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+    Author: Sebastian Witek
+    Date: Thursday, September ‎18, ‎2014
+    File: tabitha-opt.html
+-->
+
+<html>
+
+<head>
+    <title>Options - Tabitha</title>
+</head>
+
+<body>
+    <div class="optpane" id="opt">
+        <img src="tab128.png" id="logo">
+        <h1 id="top">Options - Tabitha</h1>
+        <div class="optdiv" title="The order in which to arrange sorted tabs.">
+            Tab list display order:
+            <select id="sorting">
+                <option value="descending" title="Older tabs and tabs beginning with the letter 'A' appear at the top of the list. This is the default option." id="dec">Descending</option>
+                <option value="ascending" title="Newer tabs and tabs beginning with the letter 'Z' appear at the top of the list." id="asc">Ascending</option>
+            </select>
+        </div>
+        <div class="optdiv" title="Limits the lifespan of retained tabs to 3 hours each.">Limit lifespan of recently closed tabs (recommended):
+            <input type="checkbox" id="recent">
+        </div>
+        <div class="optdiv" title="Limits the lifespan of combined tab groups to 1 week.">Limit lifespan of combined tab groups (recommended):
+            <input type="checkbox" id="combine">
+        </div>
+    </div>
+
+    <div class='choice' id="restore" title="Reset everything!">Restore Defaults</div>
+    <div class='choice' id="done" title="Close this tab">Done</div>
+</body>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/tabitha-opt-min.css">
+<script src="js/tabitha-opt-compiled.js"></script>
+
+</html>

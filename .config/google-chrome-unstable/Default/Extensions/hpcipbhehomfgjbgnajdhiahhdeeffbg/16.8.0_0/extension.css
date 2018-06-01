@@ -1,0 +1,884 @@
+/* general */
+
+.screenleap-green {
+    color: #497a0d !important;
+}
+
+.screenleap-red {
+    color: #f00 !important;
+}
+
+.screenleap-flat-button {
+    display: inline-block;
+    min-width: 60px !important;
+    background: #fff;
+    color: #333 !important;
+    font-family: 'Lucida Grande', Verdana, Arial, sans-serif !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+    text-decoration: none !important;
+    line-height: normal !important;
+    text-align: center !important;
+    padding: 3px 8px 5px 8px !important;
+    border: 1px solid #999 !important;
+    border-radius: 3px !important;
+    -moz-border-radius: 3px !important;
+    -webkit-border-radius: 3px !important;
+    -webkit-user-select: none !important;
+    -khtml-user-select: none !important;
+    -moz-user-select: none !important;
+    user-select: none !important;
+    cursor: pointer !important;
+    text-transform: none !important;
+    white-space: nowrap !important;
+    width: auto !important;
+}
+
+.screenleap-flat-button:hover {
+    color: #fff !important;
+    background-color: #333;
+    border: 1px solid #333 !important;
+}
+
+.screenleap-flat-button:active {
+    color: #fff !important;
+    background-color: #444;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, .25), 0 1px 2px rgba(0, 0, 0, .05);
+    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, .25), 0 1px 2px rgba(0, 0, 0, .05);
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, .25), 0 1px 2px rgba(0, 0, 0, .05);
+}
+
+#screenleapExtensionMenu {
+    background-color: #fff;
+}
+
+#screenleapExtensionMenu .indicator {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+    vertical-align: middle;
+}
+
+#screenleapExtensionMenu .loading {
+    white-space: nowrap;
+}
+
+#screenleapExtensionMenu .indicator[id] {
+    visibility: hidden;
+}
+
+#screenleapShade, #screenleapPromptShade {
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    filter: alpha(80);
+    z-index: 20000000;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* extension menu */
+
+#screenleapExtensionMenu div, #screenleapExtensionMenu td {
+    font-family: 'Lucida Grande', Verdana, Arial, sans-serif !important;
+    font-size: 13px;
+}
+
+#screenleapExtensionMenu div.menu-header-row {
+    font-weight: bold;
+    padding: 3px 25px 6px;
+}
+
+#screenleapExtensionMenu div.menu-row {
+    color: #333;
+    padding: 1px 5px;
+    background: #fff;
+    min-height: 16px;
+    border: solid 1px #fff;
+    border-radius: 3px 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 3px;
+    white-space: nowrap;
+    cursor:pointer;
+}
+
+#screenleapExtensionMenu div.menu-row:hover, .screenleap-flat-button.screenleap-green {
+    color: #333 !important;
+    background: #c9d89d !important;
+    background: -o-linear-gradient(top, color-stop(0, #e7edd3), color-stop(0.4, #c9d89d), color-stop(0.41, #bfd18b)) !important;
+    background: -ms-linear-gradient(top, color-stop(0, #e7edd3), color-stop(0.4, #c9d89d), color-stop(0.41, #bfd18b)) !important;
+    background: -moz-linear-gradient(top, color-stop(0, #e7edd3), color-stop(0.4, #c9d89d), color-stop(0.41, #bfd18b)) !important;
+    background: -khtml-gradient(linear, left top, left bottom, color-stop(0, #e7edd3), color-stop(0.4, #c9d89d), color-stop(0.41, #bfd18b)) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e7edd3), color-stop(0.4, #c9d89d), color-stop(0.41, #bfd18b)) !important;
+    border-color: #b5ca79 #95b146 #95b146 !important;
+    cursor: pointer;
+}
+
+.screenleap-flat-button.screenleap-green:hover {
+    color: #000 !important;
+    background: #bfd18b !important;
+    background: -o-linear-gradient(top, color-stop(0, #dde6c1), color-stop(0.4, #bfd18b), color-stop(0.41, #b5ca79)) !important;
+    background: -ms-linear-gradient(top, color-stop(0, #dde6c1), color-stop(0.4, #bfd18b), color-stop(0.41, #b5ca79)) !important;
+    background: -moz-linear-gradient(top, color-stop(0, #dde6c1), color-stop(0.4, #bfd18b), color-stop(0.41, #b5ca79)) !important;
+    background: -khtml-gradient(linear, left top, left bottom, color-stop(0, #dde6c1), color-stop(0.4, #bfd18b), color-stop(0.41, #b5ca79)) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #dde6c1), color-stop(0.4, #bfd18b), color-stop(0.41, #b5ca79)) !important;
+    border-color: #bfd18b #a1bc55 #a1bc55 !important;
+}
+
+#screenleapExtensionMenu div.menu-row:active, .screenleap-flat-button.screenleap-green:active {
+    color: #000 !important;
+}
+
+.screenleap-flat-button.screenleap-orange {
+    color: #333 !important;
+    background: #ffd248 !important;
+    background: -o-linear-gradient(top, color-stop(0, #ffe495), color-stop(0.4, #ffd248), color-stop(0.41, #ffcc2e)) !important;
+    background: -ms-linear-gradient(top, color-stop(0, #ffe495), color-stop(0.4, #ffd248), color-stop(0.41, #ffcc2e)) !important;
+    background: -moz-linear-gradient(top, color-stop(0, #ffe495), color-stop(0.4, #ffd248), color-stop(0.41, #ffcc2e)) !important;
+    background: -khtml-gradient(linear, left top, left bottom, color-stop(0, #ffe495), color-stop(0.4, #ffd248), color-stop(0.41, #ffcc2e)) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffe495), color-stop(0.4, #ffd248), color-stop(0.41, #ffcc2e)) !important;
+    border-color: #dfa700 #c69400 #c69400 !important;
+}
+
+.screenleap-flat-button.screenleap-orange:hover {
+    color: #000 !important;
+    background: #ffde7b !important;
+    background: -o-linear-gradient(top, color-stop(0, #ffeaaf), color-stop(0.4, #ffde7b), color-stop(0.41, #ffd861)) !important;
+    background: -ms-linear-gradient(top, color-stop(0, #ffeaaf), color-stop(0.4, #ffde7b), color-stop(0.41, #ffd861)) !important;
+    background: -moz-linear-gradient(top, color-stop(0, #ffeaaf), color-stop(0.4, #ffde7b), color-stop(0.41, #ffd861)) !important;
+    background: -khtml-gradient(linear, left top, left bottom, color-stop(0, #ffeaaf), color-stop(0.4, #ffde7b), color-stop(0.41, #ffd861)) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffeaaf), color-stop(0.4, #ffde7b), color-stop(0.41, #ffd861)) !important;
+    border-color: #ffc112 #dfa700 #dfa700 !important;
+    cursor: pointer;
+}
+
+.screenleap-flat-button.screenleap-orange:active {
+    color: #000 !important;
+}
+
+.screenleap-flat-button.screenleap-red {
+    color: #333 !important;
+    background: #d49fb9 !important;
+    background: -o-linear-gradient(top, color-stop(0, #e6c1d5), color-stop(0.4, #d49fb9), color-stop(0.41, #d89cb8)) !important;
+    background: -ms-linear-gradient(top, color-stop(0, #e6c1d5), color-stop(0.4, #d49fb9), color-stop(0.41, #d89cb8)) !important;
+    background: -moz-linear-gradient(top, color-stop(0, #e6c1d5), color-stop(0.4, #d49fb9), color-stop(0.41, #d89cb8)) !important;
+    background: -khtml-gradient(linear, left top, left bottom, color-stop(0, #e6c1d5), color-stop(0.4, #d49fb9), color-stop(0.41, #d89cb8)) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e6c1d5), color-stop(0.4, #d49fb9), color-stop(0.41, #d89cb8)) !important;
+    border-color: #d18cab #b87493 #b87493 !important;
+    cursor: pointer;
+}
+
+.screenleap-flat-button.screenleap-red:hover {
+    color: #000 !important;
+    background: #dcb1c6 !important;
+    background: -o-linear-gradient(top, color-stop(0, #edd3e1), color-stop(0.4, #dcb1c6), color-stop(0.41, #dfaec5)) !important;
+    background: -ms-linear-gradient(top, color-stop(0, #edd3e1), color-stop(0.4, #dcb1c6), color-stop(0.41, #dfaec5)) !important;
+    background: -moz-linear-gradient(top, color-stop(0, #edd3e1), color-stop(0.4, #dcb1c6), color-stop(0.41, #dfaec5)) !important;
+    background: -khtml-gradient(linear, left top, left bottom, color-stop(0, #edd3e1), color-stop(0.4, #dcb1c6), color-stop(0.41, #dfaec5)) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #edd3e1), color-stop(0.4, #dcb1c6), color-stop(0.41, #dfaec5)) !important;
+    border-color: #d89eb8 #c185a0 #c185a0 !important;
+}
+
+.screenleap-flat-button.screenleap-red:active {
+    color: #000 !important;
+}
+
+#screenleapMessage {
+    color: #f00;
+}
+
+#screenleapExtensionMenu #regionScreenshotLink {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEJJREFUeNpi8PPz+w8EDOTSIMwIIigFTP7+/mSZgqxv1CWDzSWMjIyUuwRkCBAwgjmkplAg+I+OqeISJgYqAIAAAwBvB3UB0XloTwAAAABJRU5ErkJggg==) no-repeat 0 2px; /* capture_region.png */
+    padding-left: 20px;
+}
+
+#screenleapExtensionMenu #windowScreenshotLink {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAASpJREFUeNqsUktuhDAM9US9AOcqEksOU1Xtor1A11wCgbgUYoH4CmK7tklG/cxMW6mWnDh2/PKe4VRV1bNz7gkRYds2WNcVpmkyH4YBxnGEeZ6txswQLcuylzRNH+3QNA2b0d9cWrXLgO90qesa9n2HZVnsVWWhDNQ1VnYfWXw1A0nvUyBDJSAiQELwuwdEL+CyezlLTJLXOhFDURRnEKeLtB+rAskFvUQCiMhHo8RaszxdYOK9DxeUAVkTSi4yQVQwAUIKkr7LctocB8REgW6gjUdepcrp6lycvhJlnKVQbD5AwWpX5wpO5UAcKgcWQQIHlgSXZXwCsVlwlBLiKENYwI3Pa4NNkuQ1z/OHruugbVvQve97+29uWVmWbzE+8Q+v/MYc/IO9CzAAp4d/AMQ92YkAAAAASUVORK5CYII=) no-repeat 0 2px; /* capture_window.png */
+    padding-left: 20px;
+}
+
+#screenleapExtensionMenu #screenshotsLink {
+    padding-left: 20px;
+}
+
+#screenleapExtensionMenu #privateBrowserShareLink, #screenleapExtensionMenu #broadcastBrowserLink  {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTNGNUUxREZDMDAxMTFFNEI2RDhCRjhGMTI2ODY5NzkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RTNGNUUxRTBDMDAxMTFFNEI2RDhCRjhGMTI2ODY5NzkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFM0Y1RTFEREMwMDExMUU0QjZEOEJGOEYxMjY4Njk3OSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFM0Y1RTFERUMwMDExMUU0QjZEOEJGOEYxMjY4Njk3OSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pi6VzzIAAAHCUExURQAAAOHh4f///8/Pz97e3unp6ebm5vX19bW1tdjY2Ojn6M3NzdHQ0YyMjGRkZGpqaurq6t/f3+Df4P7+/qioqJCQkM7OzvT09O7u7u/v762trfr6+vj4+Pf497S0tO3t7fDw8PHx8Pv7/I6OjvX19pubm+3t7Pn5+fLy8b++v/b29vj5+YiIiNPS09bV1mlqaeXl5vr7++Pk5Ht7e2hoaOTl5OTj49/f4KGhobe3t56ens7Nzvf29+Hg4ff3+OPi4z8/P+Lh4nFxceLi4t3c3VhYWPPz88fHx9HR0t/e3/b19gEBAZKTk2JiYtPT06urq3p6eba2thMTE9zb3LOzs+Pj4/Tz9Obl5v38/Pb39ri4uK+vr/Hx8bq6uv39/ejo6ISFhPLx8oeHh+Xk5bW1tPv6+vr6++Pj5Ofm5uTk5OHh4Kqqqi4uLvPy8+zs7NXU1Y2NjN7f32NjY7KyshsbGwoKCmtra+Tk5WVlZezs65iZmPP09PLy8q6uruXl5W9vb97e39nY2eDh4cHBwdLS0dDQ0I2NjWxsbHBvcODg3/z8/KWlpaOjo46Pj9/f3tnZ2f38/e7t7e/u7/z7+5OTk////+q+w6YAAACWdFJOU///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AGkSznoAAADqSURBVHjaYuiPDakVsZqiY+xkwsdXVM/J0MzIyhVuL+TSqKfLw9PqXsEQyFLn6BnMme8hxm0txqzJwMARxSHVrSqaENDBz69f5svAIJcorCQtK66oxpXM2JnFDRQQZ2KakCZbLVnJypZu0MLAUFzDZCijEiPPyhZqa87IzMAQrSCsreUmIcBVzigoCBKQkoyTYdcAKjBq6mMBCfhLdNmEKeTFmzoLNYAFRCZO9sqdJJBhxljIAhbokWYCgYhUu0h2dvVMoMMsU7ItqnxEe9sKeHmVk1wZONsdckpKvRkgIMiPYSoawBAACDAACKlAIC1KSEwAAAAASUVORK5CYII=) no-repeat 0 2px; /* browser_share_icon.png */
+    padding-left: 20px;
+}
+
+#screenleapExtensionMenu #privateScreenShareLink, #screenleapExtensionMenu #broadcastScreenLink  {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQxJREFUeNqkUjsKAkEMTUT8YLet1WIpeBVbsRD0DHbWdp7BwkJsPYRibW/pGWTdT8x8N+OKwpqFzcwkeXkvMxjHQ7rfb1DH+v0BYKvVoSR51AJot7vQVIuiKICIF8g/QuPVVvyNEX+852S0xxogyzKRyMVokpRH9iRC/gwCgFxHZZ4BpLK5DWqSop0FeJZH9MbaE8cgFjBIWQJaekQ25GQIC46CGaSZQXW6AcI2rhAr5OQQyTK02kmIBjQz9Z1LLRogZwDyHJVz16VLSyLucqQs9ZDgD8PT+fIXQCOKotrFqhbnvV71jc8WH1kluy1WJLwDjNabr5KuqyVWrtHZeH/4OY+Yc47TiQd5CTAAi1twfGQ+Nq4AAAAASUVORK5CYII=) 0 1px no-repeat; /* screenleap_icon_16_16.png */
+    padding-left: 20px;
+}
+
+#screenleapExtensionMenu #screenleapLink, .screenleap-indented-menu {
+    padding-left: 20px;
+}
+#screenleapExtensionMenu #screenshotDisabledNote {
+    display: none;
+}
+
+.screenleapWarningMessage {
+    color: #900;
+    font-style: italic;
+}
+
+#screenleapExtensionMenu hr {
+    margin: 6px 5px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    line-height: 24px;
+}
+
+#screenleapExtensionMenu #signInLink {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFNJREFUeNqskcEKACAIQ1v0q36VH7vo0CWykLmTiMj2BpJNVW8FGnsws9fdsotz6e5pJ6yKwyomDJm87P4YKe2w4glucZDgABUs1HagVhzGnQIMAGkiDh1sxeGvAAAAAElFTkSuQmCC) top left no-repeat; /* signin.png */
+    padding-left: 20px;
+}
+
+#screenleapExtensionMenu #signOutLink {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFZJREFUeNqs0tcNACAIBFBhV6ZiWIwfJoqN4g3wchQQkZINlg+5IkQkKcQKHBEPsEW8QAuM1/ECzAxTk0iDZZyuRgL62XQjC46nOdPP5oXwtXlLqgADABuJIz3aexuTAAAAAElFTkSuQmCC) 0 1px no-repeat; /* signout.png */
+    padding-left: 20px;
+}
+
+#screenleapExtensionMenu input[type=text], #screenleapExtensionMenu input[type=password] {
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 4px;
+    width: 238px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .1);
+    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .1);
+}
+
+/* sign-in form */
+
+#signInPanel h2 {
+    font-size: 16px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+#signInPanelTitle {
+    white-space: nowrap;
+}
+
+#signInPanel hr {
+    margin: 11px 0 12px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    line-height: 24px;
+}
+
+#signInPanel div {
+    margin-bottom: 8px;
+}
+
+#signupLinkDiv {
+    font-size: 13px;
+    float: right;
+    margin-bottom: 0;
+}
+
+#signupLink {
+    color: #1f81de;
+    font-weight: normal;
+}
+
+#signupLink:hover {
+    color: #fff;
+    background-color: #1f81de;
+}
+
+#screenleapExtensionMenu div.label {
+    margin-bottom: 4px;
+}
+
+#screenleapExtensionMenu .screenleap-flat-button {
+    margin: 0 8px 0 0;
+}
+
+/* dialog */
+
+#screenleapExtensionDialog a {
+    color: #1f81de !important;
+}
+
+#screenleapExtensionDialog a:hover {
+    text-decoration: underline;
+}
+
+.screenleap-extension-dialog {
+    position: fixed !important;
+    width: 650px;
+    top: 72px;
+    left: 50%;
+    color: #333 !important;
+    background-color: #fff !important;
+    font-family: 'Lucida Grande', Verdana, Arial, sans-serif !important;
+    font-size: 18px !important;
+    line-height: 24px !important;
+    text-align: left !important;
+    padding: 20px !important;
+    border: 1px solid #999 !important;
+    margin-left: -270px !important;
+    border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    -webkit-border-radius: 4px !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8) !important;
+    -moz-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8) !important;
+    -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8) !important;
+    z-index: 20000001 !important;
+}
+
+.screenleap-extension-dialog h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    font-size: 24px !important;
+    text-transform: none !important;
+    line-height: 32px !important;
+    margin: 0 !important;
+}
+
+.screenleap-extension-dialog hr {
+    border: 0 !important;
+    border-bottom: 1px solid #ccc !important;
+}
+
+.screenleap-extension-dialog p {
+    color: #333 !important;
+    font-family: 'Lucida Grande', Verdana, Arial, sans-serif !important;
+    line-height: 30px !important;
+    float: none !important;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+.screenleap-extension-dialog button {
+    margin: 0 !important;
+}
+
+.screenleap-extension-dialog input {
+    border-radius: 3px !important;
+    border: 1px solid #ccc !important;
+    padding: 4px 8px !important;
+    margin: 0 !important;
+    width: 484px !important;
+    vertical-align: bottom !important;
+    height: auto !important;
+}
+
+.screenleap-extension-dialog input[readonly] {
+    cursor: inherit;
+}
+
+.screenleap-extension-dialog button {
+    cursor: pointer;
+    display: inline-block;
+    background: #e6e6e6;
+    background: -o-linear-gradient(top, white, #e6e6e6);
+    background: -ms-linear-gradient(top, white, #e6e6e6);
+    background: -moz-linear-gradient(top, white, #e6e6e6);
+    background: -khtml-gradient(linear, left top, left bottom, from(white), to(#e6e6e6));
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#e6e6e6));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorStr=white, endColorStr=#e6e6e6);
+    padding: 8px 12px !important;
+    border: 1px solid #ccc;
+    border-color: #ddd #ddd #eee;
+    border-color: rgba(0, 0, 0, .1) rgba(0, 0, 0, .2) rgba(0, 0, 0, .25);
+    font-weight: normal !important;
+    line-height: normal !important;
+    border-radius: 6px !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(255, 255, 255, .05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(255, 255, 255, .05);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(255, 255, 255, .05);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, .75);
+    font-size: 21px !important;
+}
+
+.screenleap-extension-dialog button:hover {
+    background: #e6e6e6 0 -15px !important;
+    color: #333 !important;
+    text-decoration: none !important;
+}
+
+.screenleap-extension-dialog-button-row {
+    text-align: right !important;
+    margin-top: 40px !important;
+}
+
+.screenleap-extension-dialog-button-row button {
+    font-size: 18px !important;
+    padding: 6px 12px !important;
+}
+
+/* clipping rectangle */
+
+#screenleapOverlay {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: crosshair;
+    z-index: 9999999999999999;
+}
+
+#screenOverlayTop {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: crosshair;
+}
+
+#screenOverlayRight {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: crosshair;
+}
+
+#screenOverlayBottom {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: crosshair;
+}
+
+#screenOverlayLeft {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: crosshair;
+}
+
+#screenleapRectangle {
+    position: absolute;
+    display: block;
+    border: 1px solid #95b146;
+    background-color: transparent;
+    z-index: 2;
+}
+
+#screenleapResizeTopLeft, #screenleapResizeTopRight, #screenleapResizeBottomRight, #screenleapResizeBottomLeft {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKRJREFUeNpi/P//PwMImJiYJACpCCC2BeLDQLzizJkzC0ByjCBFQAX9Dk6WBepasgzssmcYfj42Ybh57THDgX3HJwAVFjIaGxsnABXM13N/yYAOLu0UBylMZAJZYWtrzYANgEwGyYMU2X7kWodVEchqkDxI0WH+b0FYFYHcBpIHKVpx+PBRrIpAjgfJM4G8CfIFyJEwE0EmQB0N8t0CRmLCCSDAALaYTVyZgGm3AAAAAElFTkSuQmCC) top left no-repeat;
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    display: none;
+}
+
+#screenleapResizeTopLeft {
+    top: -5px;
+    left: -5px;
+    cursor: nw-resize;
+}
+
+#screenleapResizeTop {
+    position: absolute;
+    display: none;
+    top: -5px;
+    left: 4px;
+    right: 4px;
+    height: 9px;
+    cursor: n-resize;
+}
+
+#screenleapResizeTopRight {
+    top: -5px;
+    right: -5px;
+    cursor: ne-resize;
+}
+
+#screenleapResizeRight {
+    position: absolute;
+    display: none;
+    top: 4px;
+    right: -4px;
+    bottom: 4px;
+    width: 9px;
+    cursor: e-resize;
+}
+
+#screenleapResizeBottomRight {
+    bottom: -5px;
+    right: -5px;
+    cursor: se-resize;
+}
+
+#screenleapResizeBottom {
+    position: absolute;
+    display: none;
+    bottom: -5px;
+    left: 4px;
+    right: 4px;
+    height: 9px;
+    cursor: s-resize;
+}
+
+#screenleapResizeBottomLeft {
+    bottom: -5px;
+    left: -5px;
+    cursor: sw-resize;
+}
+
+#screenleapResizeLeft {
+    position: absolute;
+    display: none;
+    top: 4px;
+    left: -5px;
+    bottom: 4px;
+    width: 9px;
+    cursor: w-resize;
+}
+
+/* controls */
+
+#screenleapControls {
+    position: absolute;
+    white-space: nowrap;
+    text-align: right;
+    display: none;
+}
+
+#screenleapControls.controls-at-top-left {
+    margin-bottom: 12px;
+    top: -36px;
+    left: -2px;
+}
+
+#screenleapControls.controls-at-top-left div, #screenleapControls.controls-at-top-left a {
+    float: left;
+    margin-left: 0;
+    margin-right: 12px;
+}
+
+#screenleapControls.controls-at-top-right {
+    margin-bottom: 12px;
+    top: -36px;
+    right: -2px;
+}
+
+#screenleapControls.controls-at-top-right .screenleap-flat-button {
+    margin-right: 0;
+}
+
+#screenleapControls.controls-at-inside-top-left {
+    margin-top: 12px;
+    top: 0;
+    left: 12px;
+}
+
+#screenleapControls.controls-at-inside-top-left div, #screenleapControls.controls-at-inside-top-left a {
+    float: left;
+    margin-left: 0;
+    margin-right: 12px;
+}
+
+#screenleapControls.controls-at-inside-top-right {
+    margin-top: 12px;
+    top: 0;
+    right: 12px;
+}
+
+#screenleapControls.controls-at-inside-top-right .screenleap-flat-button {
+    margin-right: 0;
+}
+
+#screenleapControls.controls-at-inside-bottom-left {
+    margin-bottom: 12px;
+    bottom: 0;
+    left: 12px;
+}
+
+#screenleapControls.controls-at-inside-bottom-left div, #screenleapControls.controls-at-inside-bottom-left a {
+    float: left;
+    margin-left: 0;
+    margin-right: 12px;
+}
+
+#screenleapControls.controls-at-inside-bottom-right {
+    margin-bottom: 12px;
+    bottom: 0;
+    right: 12px;
+}
+
+#screenleapControls.controls-at-inside-bottom-right .screenleap-flat-button {
+    margin-right: 0;
+}
+
+#screenleapControls.controls-at-bottom-left {
+    margin-top: 12px;
+    bottom: -36px;
+    left: -2px;
+}
+
+#screenleapControls.controls-at-bottom-left div, #screenleapControls.controls-at-bottom-left a {
+    float: left;
+    margin-left: 0;
+    margin-right: 12px;
+}
+
+#screenleapControls.controls-at-bottom-right {
+    margin-top: 12px;
+    bottom: -36px;
+    right: -2px;
+}
+
+#screenleapControls.controls-at-bottom-right .screenleap-flat-button {
+    margin-right: 0;
+}
+
+#screenleapDimensions {
+    display: inline-block !important;
+    padding: 3px 10px !important;
+    font-size: 12px !important;
+    border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    color: #e6e6e6 !important;
+    line-height: 18px !important;
+    height: 18px !important;
+    cursor: default !important;
+    vertical-align: middle !important;
+}
+
+#screenleapControls div, #screenleapControls a {
+    float: right;
+    margin-left: 12px !important;
+}
+
+#screenleapControls a.screenleap-flat-button {
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* screen share*/
+#screenleapChatBox #screenleapChatBoxHeader a#screenleapExpand {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+#screenleapChatBox #screenleapChatBoxHeader a#screenleapCollapse {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+#screenleapShareRectangleTop {
+    position: fixed;
+    top: 0;
+    left: 4px;
+    height: 4px;
+    width: 100%;
+    z-index: 2147483648;
+}
+
+#screenleapShareRectangleRight {
+    position: fixed;
+    top: 4px;
+    right: 0;
+    height: 100%;
+    width: 4px;
+    z-index: 2147483648;
+}
+
+#screenleapShareRectangleBottom {
+    position: fixed;
+    bottom: 0;
+    right: 4px;
+    height: 4px;
+    width: 100%;
+    z-index: 2147483648;
+}
+
+#screenleapShareRectangleLeft {
+    position: fixed;
+    bottom: 4px;
+    left: 0;
+    height: 100%;
+    width: 4px;
+    z-index: 2147483648;
+}
+
+.screenleap-share-dialog-label {
+    font-size: 18px;
+    margin-top: 24px !important;
+    margin-bottom: 0 !important;
+}
+
+.screenleap-share-dialog-or-label {
+    font-size: 18px;
+    margin-top: 24px !important;
+    margin-bottom: 0 !important;
+}
+
+input#screenleapScreenShareUrl, input#screenleapScreenShareCode {
+    width: 460px !important;
+    font-family: 'Lucida Grande', Verdana, Arial, sans-serif !important;
+    font-size: 21px !important;
+    color: black !important;
+    background-color: #fff !important;
+    margin-top: 10px !important;
+    padding: 8px !important;
+    line-height: 24px !important;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+input#screenleapScreenShareUrl:focus, input#screenleapScreenShareCode:focus {
+    background-color: #d5eca0 !important;
+    border-color: #80a02f !important;
+    box-shadow: 0 0 5px #ccc;
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+}
+
+#screenleapScreenShareUrlCopiedMessage, #screenleapScreenShareCodeCopiedMessage {
+    color: #80a02f !important;
+    position: absolute !important;
+    white-space: nowrap !important;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    top: 40px !important;
+    left: -45px !important;
+}
+
+#screenleapExtensionMenu #presenterControlPanel #loading, #screenleapExtensionMenu #presenterControlPanel #sharing {
+    white-space: nowrap;
+}
+
+#screenleapExtensionMenu #presenterControlPanel #sharingStatus {
+    font-weight: bold;
+}
+
+#slowNetwork {
+    display: none;
+}
+
+#screenleapExtensionMenu #presenterControlPanel button {
+    min-width: 24px;
+    width: 120px !important;
+    margin: 8px 0 8px 8px;
+}
+
+#screenleapExtensionMenu #presenterControlPanel #sharingInstructionsButton {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAwCAMAAAA8VkqRAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIdQTFRFQ2arTG+3Q2WqS2+3RGasp7rY2ODvX3/A5+z1QGGkS262RGesRWiuSm61Sm21RmmvRWetSW20SWyzRmmwR2qxSGuySGuxzNv51d7sl6nLb4WtSmmo09zr0dvr4en5P1+fPl2ddIu1z9nqv8zj1NvnTHC4epO/lazQ3eTwPFqY////3eTx////g25J6QAAAC10Uk5T//////////////////////////////////////////////////////////8Ape8L/QAAAUpJREFUeNp0kolygyAURenyuppqmjS4ZWsNBvT/v6+XRcRAzjjwuAcFZx4bS+ojqBxZSe1bREslo/aaoCXWX5P0t4LuCCFEUgjROQMxzAgxDJ0ehmEhhNjrkSJRdwjxtUh05giTB+Jch/ksbFifXe6F29xN+SQQEvYHN7eC9P3dDyyEify5gdCbl/l0Bswy97fqaJnP/3GTQ9B+SLAnNMPfS8QvmuFu+4yVTFCNrJLNa0QjKyabS4JGMnlJAvGwgLsZ4ilEKWULiI8ApaRSpoJYzSBfwegS4suDXI9cjxBrD5eKr2F1DfHtkeYIG0D8WA7c5XYJsTPYkB/ccgex1dh8K+0KQGyA3oxnMwOR5znCPMcr+QxElmVKmUGXExBFUWBzgbwIgPgEMMoUHohnjeR29kAwg5s8EMfHBEeJZji9R5zQDPfa51+AAQAXn4YWc42RUQAAAABJRU5ErkJggg==);
+    width: 24px !important;
+    height: 24px !important;
+    border: 0 !important;
+    vertical-align: middle !important;
+    margin: 0 8px 2px 0 !important;
+    cursor: pointer;
+}
+
+#screenleapExtensionMenu #presenterControlPanel #sharingInstructionsButton:hover {
+    background-position: 0 -24px;
+}
+
+#screenleapExtensionMenu #pauseButton {
+    margin-left: 0 !important;
+}
+
+.screenleap-iframe-overlay {
+    position: absolute;
+    z-index: 1000;
+
+    background: transparent;
+    opacity: 0;
+    filter: alpha(opacity=0);
+/*    background-color: rgba(0, 255, 0, 0.3) !important; */
+    pointer-events: auto;
+}
+
+#popupShowAdvanced {
+    display:block;
+    margin-top: 5px;
+}
+#popupShowAdvanced:hover {
+    text-decoration: underline;
+}
+
+#popupHideAdvanced {
+    display:none;
+    margin-top: 5px;
+}
+
+#popupHideAdvanced:hover {
+    text-decoration: underline;
+}
+
+#popupAdvanced {
+    display:none;
+}
+
+#screenleapExtensionMenu #mindisp,#screenleapExtensionMenu #maxdisp {
+    width: 25px;
+}
+
+#screenleapExtensionMenu .popupLabelLeft {
+	display: inline-block;
+	width: 50px;
+	margin-right: 5px;
+    text-align: right;
+}
+#screenleapExtensionMenu .popupLabelRight {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+/* using a div for this because the image was causing a border for some reason */
+#screenleapExtensionIcon {
+    display: inline-block;
+    background: #fff url(data:image/png;base64,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) top left;
+    width: 19px;
+    height: 19px;
+    vertical-align: text-bottom;
+}
+
+#screenleapSupportCursor {
+    background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAVCAYAAACZm7S3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDVFRDA2RTk0MkI5MTFFMkIwMURCNkE3NTZFNDM1OTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDVFRDA2RUE0MkI5MTFFMkIwMURCNkE3NTZFNDM1OTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpENUVEMDZFNzQyQjkxMUUyQjAxREI2QTc1NkU0MzU5NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpENUVEMDZFODQyQjkxMUUyQjAxREI2QTc1NkU0MzU5NCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqT8e38AAAG8SURBVHjanJNPKERBHMe/b2xi/75IiMNmkz8na69eKWmJEOVfKQdKEinZq1Lawx60JSdHNxcnR6yLVuRmDw6bkq0tFpe97D4zszM8PLv7vPq+N2/e+3xm5jcN1FCzjncsA1BpqqDTe7EYLsJuHQeBPaygjza9UKigzIvD8/PT8Lu1I4whaEXAYdXjxvTmCPyd2q4VAZGN/wiI8cWqgPzssCIgZp0etwtTG8MlBb9gXdd5XC4nJtYHiwqIGZjP53lcTgdGV/q/C/AlIH+BMk6nHUNLvaYCUgzM5XJC4MDAolYQAF1SYJOwBF5eMny9DDwMH5vVk4FZmgyHjeBOOIrZmXG0t/mgKApuLmJRxPDEfhYQ5JNIWILZm3T0fP+K9wUXeuBr6V4VPydpLmnOaG6ZjMNGkI1S6/Pg4eERdns1WBu9aBJFyghJiglJY2N9AbxPh8T0kvHcafAkEuO10CYDaG0JbND+BpHPrbLdrV0rdPMbRBXZhwS2kKzbrsHr6xuvdEVl4fCJYqVEYBOSjFhHoa0jG8epkp571r1aExKJq4hZ2ZUSR7ZKjNYu3hNizdlyYClQDTOU24UPAQYAfKXi66dK0aoAAAAASUVORK5CYII=);
+    position: absolute;
+    width: 15px;
+    height: 21px;
+    z-index: 9999999999999999;
+    opacity: 0.85;
+    filter: alpha(opacity=85);
+}
+
+@-moz-keyframes guestsLoaded {
+  from { clip: rect(1px, auto, auto, auto); }
+  to { clip: rect(0px, auto, auto, auto); }
+}
+
+@-webkit-keyframes guestsLoaded {
+  from { clip: rect(1px, auto, auto, auto); }
+  to { clip: rect(0px, auto, auto, auto); }
+}
+
+.ep-dp-guests {
+    -moz-animation-duration: 0.001s;
+    -webkit-animation-duration: 0.001s;
+    -moz-animation-name: guestsLoaded;
+    -webkit-animation-name: guestsLoaded;
+}

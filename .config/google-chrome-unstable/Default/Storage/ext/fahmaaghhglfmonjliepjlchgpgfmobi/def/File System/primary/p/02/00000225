@@ -1,0 +1,32 @@
+
+
+-------session starts-------
+
+[5-20 9:53:59.379] INFO: MediaGallery: name=/home/hayden/Music, galleryId=1, isMediaDevice=false, deviceId=undefined
+[5-20 9:53:59.379] INFO: MediaGallery: name=/home/hayden/Pictures, galleryId=2, isMediaDevice=false, deviceId=undefined
+[5-20 9:53:59.380] INFO: MediaGallery: name=/home/hayden/Videos, galleryId=3, isMediaDevice=false, deviceId=undefined
+[5-20 9:53:59.382] INFO: Starts a quick scan on /home/hayden/Music
+[5-20 9:53:59.382] INFO: Iterating over dir / from source /home/hayden/Music
+[5-20 9:53:59.382] INFO: Starts a quick scan on /home/hayden/Pictures
+[5-20 9:53:59.382] INFO: Iterating over dir / from source /home/hayden/Pictures
+[5-20 9:53:59.382] INFO: Starts a quick scan on /home/hayden/Videos
+[5-20 9:53:59.382] INFO: Iterating over dir / from source /home/hayden/Videos
+[5-20 9:53:59.473] INFO: /home/hayden/Music does not contain music file
+[5-20 9:53:59.474] INFO: /home/hayden/Videos does not contain music file
+[5-20 9:53:59.476] INFO: Got the drag_and_drop directory
+[5-20 9:53:59.477] INFO: Iterating over dir /backgrounds from source /home/hayden/Pictures
+[5-20 9:53:59.487] INFO: /home/hayden/Pictures does not contain music file
+[5-20 9:53:59.858] INFO: Fetched user settings from server.
+[5-20 9:53:59.863] INFO: chromeapp:E ready
+[5-20 9:54:0.387] INFO: lsUserAddedMusicSourceIds=null
+[5-20 9:54:0.388] INFO: lsLastTrackFailureLoggingTime=null
+[5-20 9:54:0.388] INFO: lsUserSelectedDownloadDirId=null
+[5-20 9:54:0.398] INFO: lsDefaultDownloadLocationId=null
+[5-20 9:54:0.398] INFO: Setting is already: lsAlwaysUseDefaultDownloadLocation = false
+[5-20 9:54:0.398] INFO: Setting is already: lsDefaultDownloadLocationId = null
+[5-20 9:54:0.868] INFO: lsAppActivated=false
+[5-20 9:54:0.868] INFO: lsDragAndDropActivated=false
+[5-20 9:54:0.868] INFO: Nacl version: 1.0.467.4929
+[5-20 9:54:0.869] INFO: lsAppActivated=false
+[5-20 10:34:50.346] INFO: Network went offline, canceling delay timer.
+[5-20 10:37:42.871] INFO: Network came online, restarting delay timer.

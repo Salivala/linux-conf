@@ -1,0 +1,13 @@
+[PlasmaRunnerManager]
+LaunchCounts=1 services_org.kde.contactthemeeditor.desktop,1 services_kcm_kdeconnect.desktop,2 services_khtml_appearance.desktop,5 services_google-chrome-unstable.desktop,1 services_systemsettings.desktop,1 services_kwincompositing.desktop,1 services_org.kde.dolphin.desktop,11 desktopsessions_1,6 services_org.kde.konsole.desktop,1 services_kcm_desktoptheme.desktop,1 services_AdobeReader.desktop,1 services_breezedecorationconfig.desktop,2 services_org.kde.kmail2.desktop,1 services_joystick.desktop,3 services_kcmsmserver.desktop
+pluginWhiteList=services,places,desktopsessions,PowerDevil,shell,bookmarks,recentdocuments,locations,baloosearch
+
+[PlasmaViews][Panel 2][Horizontal1600]
+thickness=36
+
+[ScreenConnectors]
+0=eDP-1
+1=DP-2
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc-1.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/00-start-here-2.js

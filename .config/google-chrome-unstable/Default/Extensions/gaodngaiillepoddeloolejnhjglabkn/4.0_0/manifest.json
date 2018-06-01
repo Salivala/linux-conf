@@ -1,0 +1,27 @@
+{
+   "browser_action": {
+      "default_popup": "app.html"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "chromeos": "Ctrl+Shift+K",
+            "linux": "Ctrl+Shift+K",
+            "mac": "Command+Shift+K",
+            "windows": "Ctrl+Shift+K"
+         }
+      }
+   },
+   "description": "Manage your tabs.",
+   "icons": {
+      "128": "public/images/icon-128.png",
+      "16": "public/images/icon-16.png",
+      "48": "public/images/icon-48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCNnju3pgqpzZ8WzZJg5Wjy7Nt22E3EoHnmkKY18bxsu4K1v8e5sUEGaUA9EQ49Yppsl7XvSisez6i2by/6XWqVtHilsX+KwYApERTvDaFlWVV+YT9ws90ZpI0fAk5ci1yUHLTsOc6J0pObv5JL1488XrOHm0JtwUiq+r8Nh3isGwIDAQAB",
+   "manifest_version": 2,
+   "name": "Keepin' Tabs – tabs manager",
+   "permissions": [ "activeTab", "tabs", "storage", "chrome://favicon/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.0"
+}

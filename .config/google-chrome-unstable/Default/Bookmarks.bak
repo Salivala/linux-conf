@@ -1,0 +1,553 @@
+{
+   "checksum": "c09585ba7200cc733879d48095fef043",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13128679700750236",
+               "id": "61",
+               "name": "Learn C++",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.learncpp.com/"
+            }, {
+               "date_added": "13128779374313937",
+               "id": "62",
+               "name": "Documentation | Hexo",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://hexo.io/docs/"
+            }, {
+               "date_added": "13128834409770184",
+               "id": "63",
+               "name": "Microsoft Connect 2016 | Xamarin University",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://university.xamarin.com/connect2016?mkt_tok=eyJpIjoiWVRrNE9XVXdPRFl3TXpWbCIsInQiOiJJaVBCV2R1RGNGVkZpb2dVd0luSGhjaGxkUHAwMXpLSWVSdVwvQ1lpZGhpUHBTY0tZaWNGYVR2ZmZpQ2pKM1hCRHBoWjV3anBPVitcL1V0YnZFMWduMGo3UFBGdk0ydEFzek1sMEd6aTlYM004aG5MRk01TExsOWFNampWZzU0dzliIn0%3D"
+            }, {
+               "date_added": "13129194502700428",
+               "id": "64",
+               "name": "Bootstrap 3 Tutorial",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.w3schools.com/bootstrap/default.asp"
+            }, {
+               "date_added": "13129421352205967",
+               "id": "65",
+               "name": "Never Ask About the Money, but Always Ask This at Every Interview | Lou Adler | Pulse | LinkedIn",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.linkedin.com/pulse/1-question-job-seekers-must-ask-every-interview-lou-adler"
+            }, {
+               "date_added": "13129447094315122",
+               "id": "66",
+               "name": "html - Using HtmlAgilityPack to get specific data in C# and serialize it to json - Stack Overflow",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://stackoverflow.com/questions/35693367/using-htmlagilitypack-to-get-specific-data-in-c-sharp-and-serialize-it-to-json"
+            }, {
+               "date_added": "13168874795648950",
+               "id": "67",
+               "meta_info": {
+                  "last_visited_desktop": "13168874795649678"
+               },
+               "name": "Spacemacs disable :q - Emacs Stack Exchange",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://emacs.stackexchange.com/questions/23858/spacemacs-disable-q"
+            } ],
+            "date_added": "13171188225287026",
+            "date_modified": "13171188225287027",
+            "id": "8",
+            "name": "Starred",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "date_added": "13092642038485150",
+            "id": "9",
+            "meta_info": {
+               "last_visited": "13165288073156172",
+               "last_visited_desktop": "13171281486249149"
+            },
+            "name": "Off Topic Lounge",
+            "sync_transaction_version": "101",
+            "type": "url",
+            "url": "http://s1.zetaboards.com/OT_Lounge/index/"
+         }, {
+            "date_added": "13124320622248590",
+            "id": "10",
+            "meta_info": {
+               "last_visited_desktop": "13171280071793859"
+            },
+            "name": "YouTube",
+            "sync_transaction_version": "100",
+            "type": "url",
+            "url": "https://www.youtube.com/"
+         }, {
+            "date_added": "13124661661881052",
+            "id": "11",
+            "meta_info": {
+               "last_visited_desktop": "13171275956751070"
+            },
+            "name": "GitHub",
+            "sync_transaction_version": "88",
+            "type": "url",
+            "url": "https://github.com/"
+         }, {
+            "date_added": "13143667073037367",
+            "id": "12",
+            "meta_info": {
+               "last_visited_desktop": "13171102968926494"
+            },
+            "name": "About",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://haydenszymanski.me/Visio/#"
+         }, {
+            "date_added": "13129067347199216",
+            "id": "13",
+            "meta_info": {
+               "last_visited": "13165476154492951",
+               "last_visited_desktop": "13171041952065931"
+            },
+            "name": "",
+            "sync_transaction_version": "16",
+            "type": "url",
+            "url": "http://www.radford.edu/content/radfordcore/home.html"
+         }, {
+            "date_added": "13128679886995888",
+            "id": "14",
+            "meta_info": {
+               "last_visited": "13164516885762113",
+               "last_visited_desktop": "13169736618064629"
+            },
+            "name": "reddit",
+            "sync_transaction_version": "17",
+            "type": "url",
+            "url": "https://www.reddit.com/"
+         }, {
+            "date_added": "13128756316572417",
+            "id": "15",
+            "name": "LinkedIn",
+            "sync_transaction_version": "18",
+            "type": "url",
+            "url": "https://www.linkedin.com/"
+         }, {
+            "date_added": "13128756316572511",
+            "id": "16",
+            "meta_info": {
+               "last_visited": "13165497431661228",
+               "last_visited_desktop": "13171265610746331"
+            },
+            "name": "Welcome - radford.edu",
+            "sync_transaction_version": "69",
+            "type": "url",
+            "url": "https://my.radford.edu/"
+         }, {
+            "date_added": "13128756316572523",
+            "id": "17",
+            "meta_info": {
+               "last_visited_desktop": "13171258534401150"
+            },
+            "name": "YouTube",
+            "sync_transaction_version": "56",
+            "type": "url",
+            "url": "http://www.youtube.com/"
+         }, {
+            "date_added": "13128756316572527",
+            "id": "18",
+            "name": "Wikipedia",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "http://www.wikipedia.org/"
+         }, {
+            "date_added": "13143664365742872",
+            "id": "19",
+            "name": "webmin login",
+            "sync_transaction_version": "21",
+            "type": "url",
+            "url": "https://haydenszymanski.me:843/"
+         }, {
+            "date_added": "13150753503239427",
+            "id": "20",
+            "meta_info": {
+               "last_visited_desktop": "13168322746430830"
+            },
+            "name": "r",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "http://www.radford.edu/rphillip/database/Oraclenotes.htm"
+         }, {
+            "date_added": "13154730891989558",
+            "id": "21",
+            "meta_info": {
+               "last_visited_desktop": "13155279294775761"
+            },
+            "name": "League of Legends: 2017 Best Champions Tier List - Solo Queue Ranked Ladder Climbing - Patch 7.21 Update | NERFPLZ.LOL",
+            "sync_transaction_version": "22",
+            "type": "url",
+            "url": "http://www.nerfplz.com/2017/10/2017-best-champions-tier-list-solo_29.html"
+         }, {
+            "date_added": "13102446837000000",
+            "id": "22",
+            "meta_info": {
+               "last_visited": "13162090603711316",
+               "last_visited_desktop": "13170773345888223"
+            },
+            "name": "Manjaro Linux",
+            "sync_transaction_version": "23",
+            "type": "url",
+            "url": "https://manjaro.org/"
+         }, {
+            "date_added": "13102446886000000",
+            "id": "23",
+            "name": "Manjaro Wiki",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://wiki.manjaro.org/index.php?title=Main_Page"
+         }, {
+            "date_added": "13102446920000000",
+            "id": "24",
+            "meta_info": {
+               "last_visited_desktop": "13168525947132291"
+            },
+            "name": "Manjaro Forum",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://forum.manjaro.org/"
+         }, {
+            "date_added": "12802760202000000",
+            "id": "25",
+            "name": "Fedora Docs",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://docs.fedoraproject.org/"
+         }, {
+            "date_added": "13011814824000000",
+            "id": "26",
+            "name": "Fedora Magazine",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "http://fedoramagazine.org/"
+         }, {
+            "children": [ {
+               "date_added": "13148231190000000",
+               "id": "49",
+               "meta_info": {
+                  "last_visited_desktop": "13171121363468503"
+               },
+               "name": "Get Fedora",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://getfedora.org/"
+            }, {
+               "children": [ {
+                  "date_added": "13148231272000000",
+                  "id": "56",
+                  "meta_info": {
+                     "last_visited_desktop": "13171121469245412"
+                  },
+                  "name": "Fedora Spins (Desktop Environments)",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://spins.fedoraproject.org/"
+               }, {
+                  "date_added": "13148231299000000",
+                  "id": "57",
+                  "meta_info": {
+                     "last_visited_desktop": "13170854726441087"
+                  },
+                  "name": "Fedora Labs (Functional Bundles)",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://labs.fedoraproject.org/"
+               }, {
+                  "date_added": "13148231321000000",
+                  "id": "58",
+                  "name": "Fedora ARM (IoT and More!)",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://arm.fedoraproject.org/"
+               }, {
+                  "date_added": "13148231312000000",
+                  "id": "59",
+                  "name": "Fedora Alternative Downloads",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://alt.fedoraproject.org/"
+               }, {
+                  "date_added": "13170864696192030",
+                  "id": "60",
+                  "meta_info": {
+                     "last_visited_desktop": "13170864696192363"
+                  },
+                  "name": "rxvt-unicode - ArchWiki",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://wiki.archlinux.org/index.php/rxvt-unicode"
+               }, {
+                  "date_added": "13171276764143965",
+                  "id": "69",
+                  "meta_info": {
+                     "last_visited_desktop": "13171276764144427"
+                  },
+                  "name": "C++ Standard Library - Wikipedia",
+                  "sync_transaction_version": "94",
+                  "type": "url",
+                  "url": "https://en.wikipedia.org/wiki/C%2B%2B_Standard_Library"
+               } ],
+               "date_added": "13171188225293597",
+               "date_modified": "13171276764143965",
+               "id": "50",
+               "name": "More Downloads",
+               "sync_transaction_version": "1",
+               "type": "folder"
+            }, {
+               "date_added": "12802760379000000",
+               "id": "51",
+               "name": "Fedora Project Wiki",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://fedoraproject.org/wiki"
+            }, {
+               "date_added": "12995981748000000",
+               "id": "52",
+               "name": "Ask Fedora: Community Knowledge Base",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://ask.fedoraproject.org/"
+            }, {
+               "date_added": "12821148801000000",
+               "id": "53",
+               "name": "Planet Fedora",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://planet.fedoraproject.org/"
+            }, {
+               "date_added": "13108164118000000",
+               "id": "54",
+               "name": "Fedora Community Blog",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://communityblog.fedoraproject.org/"
+            }, {
+               "date_added": "12885683018000000",
+               "id": "55",
+               "name": "Join the Fedora Project",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://fedoraproject.org/wiki/Join"
+            } ],
+            "date_added": "13171188225292502",
+            "date_modified": "13171188225292502",
+            "id": "27",
+            "name": "Fedora Project",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "12775441496000000",
+               "id": "41",
+               "name": "Fedora Forum",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://forums.fedoraforum.org/"
+            }, {
+               "date_added": "13148230562000000",
+               "id": "42",
+               "name": "r/Fedora on Reddit",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.reddit.com/r/Fedora/"
+            }, {
+               "date_added": "13148230872000000",
+               "id": "43",
+               "name": "Fedora on Facebook",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.facebook.com/TheFedoraProject"
+            }, {
+               "date_added": "13148230902000000",
+               "id": "44",
+               "name": "@fedora on Twitter",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://twitter.com/fedora"
+            }, {
+               "date_added": "13148231025000000",
+               "id": "45",
+               "name": "Fedora Telegram",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://telegram.me/fedoranews"
+            }, {
+               "date_added": "13148231055000000",
+               "id": "46",
+               "name": "Fedora on Discord Chat",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://discordapp.com/invite/fedora"
+            }, {
+               "date_added": "13148231141000000",
+               "id": "47",
+               "name": "Fedora on Diaspora",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://diasp.org/u/fedora"
+            }, {
+               "date_added": "13148231122000000",
+               "id": "48",
+               "name": "#fedora IRC via Riot",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://riot.im/app/#/room/#fedora:matrix.org"
+            } ],
+            "date_added": "13171188225292509",
+            "date_modified": "13171188225292509",
+            "id": "28",
+            "name": "User Communities",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "12821147748000000",
+               "id": "36",
+               "name": "Red Hat",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.redhat.com/"
+            }, {
+               "date_added": "12821147789000000",
+               "id": "37",
+               "name": "JBoss Developer Community",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://developer.jboss.org/welcome"
+            }, {
+               "date_added": "13148230622000000",
+               "id": "38",
+               "name": "OpenShift Origin",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.openshift.org/"
+            }, {
+               "date_added": "13170755414000000",
+               "id": "39",
+               "name": "OpenSource.com",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://opensource.com/"
+            }, {
+               "date_added": "12913761071000000",
+               "id": "40",
+               "name": "The Open Source Way",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.theopensourceway.org/"
+            } ],
+            "date_added": "13171188225292515",
+            "date_modified": "13171188225292515",
+            "id": "29",
+            "name": "Red Hat",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "12821148001000000",
+               "id": "31",
+               "name": "Wikipedia",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.wikipedia.org/"
+            }, {
+               "date_added": "12885682606000000",
+               "id": "32",
+               "name": "LibriVox",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://librivox.org/"
+            }, {
+               "date_added": "13170755414000000",
+               "id": "33",
+               "name": "Open Clip Art",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.openclipart.org/"
+            }, {
+               "date_added": "13170755414000000",
+               "id": "34",
+               "name": "Free Sound",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.freesound.org/"
+            }, {
+               "date_added": "12821148376000000",
+               "id": "35",
+               "name": "Creative Commons",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://creativecommons.org/"
+            } ],
+            "date_added": "13171188225292521",
+            "date_modified": "13171188225292521",
+            "id": "30",
+            "name": "Free Content",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         } ],
+         "date_added": "13171187936391811",
+         "date_modified": "13154730891989558",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13171187936391815",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "sync_transaction_version": "101",
+      "synced": {
+         "children": [ {
+            "date_added": "13164248307199142",
+            "id": "5",
+            "meta_info": {
+               "last_visited": "13164248307216431"
+            },
+            "name": "Amazon.com: [Certified] Plugable Thunderbolt 3 20Gbps USB-C Cable (6.6'/2m, 3A/60W, Thunderbolt and USB Compatible): Computers & Accessories",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://www.amazon.com/gp/product/B01KGTGXQO/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01KGTGXQO&linkCode=as2&tag=benapp06-20&linkId=e18dc950992feea9b5f103cd3d16c003"
+         }, {
+            "date_added": "13164248313445677",
+            "id": "6",
+            "meta_info": {
+               "last_visited": "13164248313452134"
+            },
+            "name": "USB Type-C to Type-C Cables – BensonApproved",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://bensonapproved.com/usb-type-c-to-type-c-cables/"
+         }, {
+            "date_added": "13165505646015904",
+            "id": "7",
+            "meta_info": {
+               "last_visited": "13165505646018530"
+            },
+            "name": "CMT button",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "javascript:(function(){var%20s=document.createElement('script');p='';if(location.protocol==='https:'){p='s';}s.setAttribute('src','http'+p+'://button.copymethat.com/static/js/bookmarklet.js?'+new%20Date().getTime());document.getElementsByTagName('body')[0].appendChild(s);})();"
+         } ],
+         "date_added": "13171187936391815",
+         "date_modified": "13165505646015904",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
