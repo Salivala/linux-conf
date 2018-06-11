@@ -1,0 +1,191 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Nicolai Josuttis">
+<meta name="KeyWords" content="C++, Standard Library, STL, C++ Standard Library, Standard Template Library, Josuttis, book, tutorial, reference, examples">
+   <title>The C++ Standard Library - A Tutorial and Reference</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#186ABF">
+&nbsp; 
+<table CELLSPACING=0 CELLPADDING=0 HEIGHT="40" NOSAVE width="100%" >
+  <tr NOSAVE>
+      <td nosave><a href="http://cppstdlib.com/" target="_top">
+             <img src="http://www.cppstdlib.com/pict/logo-cppstdlib-350x80.bmp"
+                  width=175 height=40
+                  alt="C++11StdLib"></a>
+<td ALIGN=LEFT WIDTH="100%" BGCOLOR="#DDDDDD" NOSAVE><b><font face="Arial,Helvetica">&nbsp;The
+C++ Standard Library - A Tutorial and Reference</font></b></td>
+</tr>
+</table>
+
+<hr noshade>
+<h1><font color="#FF0000">Available now: <a href="http://www.cppstdlib.com/" target="_top">2nd 
+  edition of &quot;<i>The C++ Standard Library</i>&quot; covering C++11</a></font></h1>
+<p>
+
+<p><b><font face="Arial, Helvetica, sans-serif">C++ Book of the Year 1999, named 
+  by EXE</font></b> </p>
+<h3><b><font face="Arial, Helvetica, sans-serif" color="#FF0000">Please note: 
+  </font></b><a href="feedback.html"><b><font face="Arial, Helvetica, sans-serif"> 
+  New email address for feedback<br>
+  </font></b></a></h3>
+<h3><b><font face="Arial, Helvetica, sans-serif" size="-1">Now, also available 
+  in <a href="#polish">Polish</a>, <a href="#czech">Czech</a>, <a href="#russian">Russian</a>, 
+  <a href="#japanese">Japanese</a>, <a href="#korean">Korean</a>, <a href="#chinese">Simplified 
+  Chinese</a>, and </font></b><b><font face="Arial, Helvetica, sans-serif" size="-1"><a href="#polish">Traditional 
+  Chinese</a></font></b></h3>
+<p> 
+
+<img src="libbook.gif" align="left" width="120" height="151"> 
+  <font face="Arial,Helvetica">The C++ standard library provides a set of common 
+  classes and interfaces that greatly extend the core C++ language. The library, 
+  however, is not self-explanatory. To make full use of its components - and to 
+  benefit from their power - you need a resource that does far more than list 
+  the classes and their functions.</font> </p>
+<p><font face="Arial,Helvetica"><b>The C++ Standard Library - A Tutorial and Reference</b> not only provides
+comprehensive documentation of each library component, it also offers clearly
+written explanations of complex concepts, describes the practical programming
+details needed for effective use, and gives example after example of working
+code.</font>
+<p><font face="Arial,Helvetica">This thoroughly up-to-date book reflects
+the newest elements of the C++ standard library incorporated into the full
+ANSI/ISO C++ language standard. In particular, the text focuses on the
+Standard Template Library (STL), examining containers, iterators, function
+objects, and STL algorithms. You will also find detailed coverage of special
+containers, strings, numerical classes, internationalization, and the IOStream
+library. Each component is presented in depth, with an introduction to
+its purpose and design, examples, a detailed description, traps and pitfalls,
+and the exact signature and definition of its classes and their functions.
+An insightful introduction to fundamental concepts and an overview of the
+library will help bring newcomers quickly up to speed.</font>
+<p><font face="Arial,Helvetica">Comprehensive, detailed, readable, and practical, 
+  The C++ Standard Library is the C++ resource you will turn to again and again. 
+  An accompanying Web site, including source code, can be found at <a href="http://www.josuttis.com/libbook/" target="_top">http://www.josuttis.com/libbook/</a>.</font> 
+<p><font face="Arial,Helvetica"><b><a href="../welcomee.html">Nicolai M. Josuttis</a></b> 
+  is an independent technical consultant who designs object-oriented software 
+  for the telecommunication, traffic, finance, and manufacturing industries. He 
+  is an active member of the C++ Standard Committee library working group and 
+  a partner at System Bauhaus, a German group of recognized object-oriented system 
+  development experts. Josuttis has written several books on object-oriented programming 
+  and C++, including <a href="../tmplbook/index.html" target="_top">C++ Templates 
+  - The Complete Guide</a> and <a href="../cppbook/index.html" target="_top">Object-Orientierted 
+  Programming in C++</a>.</font> 
+<ul>
+  <li> <font face="Arial, Helvetica, sans-serif">Before you buy it:</font> 
+    <ul>
+      <li><font face="Arial,Helvetica"><a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&location=http%3A//www.amazon.com/gp/product/customer-reviews/0201379260/&tag=homepagenicol-20&linkCode=ur2&camp=1789&creative=9325" target="_top"><b>Customer 
+        Reviews</b> at amazon.com</a> (here is <a href="libbook_quotes.html">my 
+        favorite one</a>)</font></li>
+      <li><font face="Arial,Helvetica"><a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&location=http%3A//www.amazon.com/gp/product/product-description/0201379260/&tag=homepagenicol-20&linkCode=ur2&camp=1789&creative=9325" target="_top"><b>Editorial 
+        Reviews</b> at amazon.com</a></font></li>
+      <li><font face="Arial, Helvetica, sans-serif"><a href="http://accu.org/index.php/book_reviews/book_reviews?url=view.xqy?review=cp002153&term=josuttis"><b>Review</b> 
+        by <b>ACCU</b> (Association of C &amp; C++ Users), Jan 2000</a></font></li>
+      <li><font face="Arial, Helvetica, sans-serif"><a href="http://accu.org/index.php/book_reviews/book_reviews?url=view.xqy?review=cp002018&term=josuttis"><b>Review</b> 
+        by <b>ACCU</b> (Association of C &amp; C++ Users), May 2000</a></font></li>
+    </ul>
+  </li>
+  <ul>
+    <li><font face="Arial,Helvetica"><a href="http://www.ercb.com/brief/brief.0157.html" target="_top"><b>Review</b> 
+      by Dr. Dobb's Electronic Review of Computer Books</a> </font></li>
+    <li><font face="Arial, Helvetica, sans-serif"><a href="libbook.pdf"><b>Table 
+      of Contents</b> and Introduction (78kB PDF file)</a></font></li>
+    <li><font face="Arial, Helvetica, sans-serif"><a href="http://www.awl.com/cseng/titles/0-201-37926-0/" target="_top"><b>Addison 
+      Wesley page</b> regarding thi</a></font><font face="Arial,Helvetica"><a href="http://www.awl.com/cseng/titles/0-201-37926-0/">s 
+      book<br>
+      </a></font><font face="Arial,Helvetica"><br>
+      </font></li>
+  </ul>
+  <li><font face="Arial, Helvetica, sans-serif">After you bought it:</font> 
+    <ul>
+      <li><font face="Arial, Helvetica, sans-serif"><a href="examples.html">More 
+        than 170 <b>Example Programs</b> of this book</a></font> </li>
+      <li><font face="Arial, Helvetica, sans-serif"><a href="examples.html"><b><font face="Arial,Helvetica"></font></b></a><b><font face="Arial,Helvetica"><a href="faq.html">FAQ</a></font></b></font><font face="Arial, Helvetica, sans-serif"><a href="examples.html"></a></font></li>
+      <li><font face="Arial,Helvetica"><a href="errata.html"><b>Errata</b></a></font></li>
+      <li><font face="Arial,Helvetica"><a href="new.html"><b>Supplementary Issues</b></a></font></li>
+      <li><b><font face="Arial, Helvetica, sans-serif"><a href="cpplibxref.html">Internet 
+        links</a></font></b><font face="Arial, Helvetica, sans-serif"><a href="cpplibxref.html"> 
+        regarding this book</a></font><font face="Arial,Helvetica"><a href="errata.html"><b></b></a></font></li>
+      <li><font face="Arial,Helvetica"><a href="feedback.html"><b>Feedback</b></a></font></li>
+      <li><font face="Arial,Helvetica"><a href="algolist.pdf">Scott Meyers' <b>Algorithms 
+        Summary Card</b></a></font></li>
+      <li><font face="Arial, Helvetica, sans-serif"><a href="../cpp.html">My <b>C++ 
+        Resources</b></a></font></li>
+    </ul>
+  </li>
+</ul>
+<p> <font face="Arial,Helvetica">Nicolai M. Josuttis</font> <br>
+  <b><font face="Arial,Helvetica">The C++ Standard Library&nbsp; - A Tutorial 
+  and Reference</font></b> <br>
+  <font face="Arial,Helvetica">Addison-Wesley U.S.A., 1999</font> <br>
+  <font face="Arial,Helvetica">ISBN 0-201-37926-0</font> </p>
+
+<hr noshade>
+<br>
+<font face="Arial, Helvetica, sans-serif"><b>Also available in: </b></font> 
+<table border="0" cellpadding="4">
+  <tr valign="top"> 
+    <td><font face="Arial, Helvetica, sans-serif"><b><a name="polish"></a><a href="http://helion.pl/ksiazki/cpbspp.htm" target="_blank">Polish 
+      <br>
+      (ISBN 83-7361-144-4):<br>
+      <img src="covers/polish-cover.jpg" width="181" height="236" align="top" border="0"></a></b></font></td>
+    <td><p><font face="Arial, Helvetica, sans-serif"><b><a name="czech"></a><a href="http://www.cpbooks.cz/K1048" target="_blank">Czech 
+        <br>
+        (ISBN 80-251-0511-1):<br>
+        <img src="covers/czech-cover.jpg" width="180" height="240" align="top" border="0"></a></b></font></p>
+    </td>
+    <td valign="top"><font face="Arial, Helvetica, sans-serif"><b><a name="russian"></a><a href="http://shop.piter.com/book/978594723635" target="_blank">Russian<br>
+      (ISBN 5-94723-635-4):</a> <a href="http://www.jjhou.com/jjtbooks-the-cpp-standard-library-gb.htm" target="_blank"><br>
+      <img src="covers/russian-cover.jpg" width="150" height="208" align="top" border="0"></a></b></font></td>
+    <td> 
+      <p><font face="Arial, Helvetica, sans-serif"><b><a name="japanese"></a><a href="http://www.ascii.co.jp/books/detail/4-7561/4-7561-3715-6.html" target="_blank">Japanese 
+        <br>
+        (ISBN 4-7561-3715-6):<br>
+        <img src="covers/japanese-cover.jpg" width="150" height="211" align="top" border="0"></a></b></font></p>
+    </td>
+  </tr>
+  <tr> 
+    <td valign="top"><font face="Arial, Helvetica, sans-serif"><b><a name="korean"></a><a href="http://www.infopub.co.kr/common/bookinfo/bookinfo.asp?sku=06000141" target="_blank">Korean 
+      <br>
+      (ISBN 89-8054-504-5):<br>
+      <img src="covers/korean-cover.jpg" width="148" height="185" align="top" border="0"></a></b></font></td>
+    <td valign="top"><font face="Arial, Helvetica, sans-serif"><b><a name="chinese"></a><a href="http://www.jjhou.com/jjtbooks-the-cpp-standard-library-gb.htm" target="_blank">Simplified 
+      Chinese <br>
+      (ISBN 7-5609-2782-3):<br>
+      <img src="covers/chinese-cover.jpg" width="168" height="211" align="top" border="0"></a></b></font></td>
+    <td valign="top"><font face="Arial, Helvetica, sans-serif"><b><a name="taiwanese"></a><a href="http://www.jjhou.com/jjtbooks-the-cpp-standard-library.htm" target="_blank">Traditional 
+      Chinese<br>
+      (ISBN 986-421-117-X):</a> <a href="http://www.jjhou.com/jjtbooks-the-cpp-standard-library-gb.htm" target="_blank"><br>
+      <img src="covers/tradchinese.jpg" width="148" height="191" align="top" border="0"></a></b></font></td>
+  </tr>
+</table>
+<hr width="100%" noshade>
+<font face="Arial,Helvetica" size="-2">
+Copyright 2004 by Nicolai M. Josuttis</font> <br>
+
+<br><font face="Arial,Helvetica" size="-2">
+<a href="http://www.josuttis.de/impressum.html" target="main">Impressum</a>
+&nbsp;&nbsp;
+<a href="http://www.josuttis.de/datenschutz.html" target="main">Datenschutzerklärung</a> 
+</font>
+
+</body>
+</html>
+ö?7 x      [R8[R:?(’á[ ²\   -    :http://www.josuttis.com/libbook/libbook.html necko:classified 1 strongly-framed 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Mon, 11 Jun 2018 10:47:23 GMT
+Server: Apache/1.3.41 (Unix) PHP/4.4.9 mod_ssl/2.8.31 OpenSSL/0.9.8i
+Last-Modified: Thu, 24 May 2018 10:19:58 GMT
+ETag: "1321b2-2c4f-5b0691ce"
+Accept-Ranges: bytes
+Content-Length: 11343
+Content-Type: text/html
+ original-response-headers Date: Mon, 11 Jun 2018 10:47:23 GMT
+Server: Apache/1.3.41 (Unix) PHP/4.4.9 mod_ssl/2.8.31 OpenSSL/0.9.8i
+Last-Modified: Thu, 24 May 2018 10:19:58 GMT
+ETag: "1321b2-2c4f-5b0691ce"
+Accept-Ranges: bytes
+Content-Length: 11343
+Keep-Alive: timeout=15, max=99
+Connection: Keep-Alive
+Content-Type: text/html
+ uncompressed-len 0 predictor::resource-count 9 predictor::http://www.cppstdlib.com/pict/logo-cppstdlib-350x80.bmp 1,1,1528713784,4097 predictor::http://www.josuttis.com/libbook/libbook.gif 1,1,1528713784,4097 predictor::http://www.josuttis.com/libbook/covers/polish-cover.jpg 1,1,1528713784,4097 predictor::http://www.josuttis.com/libbook/covers/czech-cover.jpg 1,1,1528713784,4097 predictor::http://www.josuttis.com/libbook/covers/russian-cover.jpg 1,1,1528713784,4097 predictor::http://www.josuttis.com/libbook/covers/japanese-cover.jpg 1,1,1528713784,4097 net-response-time-onstart 335 net-response-time-onstop 513 predictor::http://www.josuttis.com/libbook/covers/korean-cover.jpg 1,1,1528713784,4097 predictor::http://www.josuttis.com/libbook/covers/chinese-cover.jpg 1,1,1528713784,4097 predictor::http://www.josuttis.com/libbook/covers/tradchinese.jpg 1,1,1528713784,4097   ,O

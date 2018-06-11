@@ -59,4 +59,3 @@ set relativenumber
 
 set autowrite
 nnoremap <C-c> :!g++ -std=c++11 % -Wall -g -o %.out && ./%.out<CR>
-

@@ -1,0 +1,22 @@
+#include </home/hayden/git/Xresources-themes/one-dark.Xresources>
+
+xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+
+Xterm*selectToClipboard: true
+
+URxvt*font:	xft:Deja Vu Sans Mono :size=11
+URxvt.depth:	32
+URxvt*scrollBar:	false
+URxvt*mouseWhellScrollPage:	false
+URxvt*cursorBlink:	true
+URxvt*transparent: false
+Urxvt.urgentOnBell: false
+Urxvt.visualBell: false
+Urxvt.letterpace: 1

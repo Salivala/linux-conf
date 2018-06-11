@@ -1,0 +1,40 @@
+/bin/sh: ff-theme-util: command not found
+i3status: trying to auto-detect output_format setting
+i3status: auto-detected "i3bar"
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientSourceOp::Msg___delete__ Route error: message sent to unknown actor ID
+
+unable to connect to the rxvt-unicode daemon: Connection refused
+
+(/usr/lib/firefox/firefox:1185): dconf-WARNING **: 22:52:02.873: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+
+(/usr/lib/firefox/firefox:1854): dconf-WARNING **: 22:52:26.868: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+pick: fopen: No such device or address
+pick: fopen: No such device or address
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x540027,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+urxvt: X connection to ':0' broken, unable to recover, exiting.
+[../i3-4.15.0.1/../i3-4.15.0.1/i3bar/src/xcb.c:1100] ERROR: X11 connection was closed unexpectedly - maybe your X server terminated / crashed?
+Exiting due to signal.
+i3-with-shmlog: Cannot open display
+
+Closing SHM log "/i3-log-858"
